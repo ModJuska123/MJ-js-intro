@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Modestas Juska",
   "license": "MJ",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
