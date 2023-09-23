@@ -28,6 +28,5 @@ const exp1 = 2 + 2;
 const exp2 = 2 * 2;
 const exp3 = 2 ** 2;
 
-console.log(exp1+2+2*25-10, exp2, exp3);
-const n = Nan;
-console.log(n, NaN);
+console.log(26-10, exp2, exp3);
+console.log(exp2 + exp3);
