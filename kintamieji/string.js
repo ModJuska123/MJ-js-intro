@@ -59,3 +59,27 @@ console.log(lrl2);
 const lrl3 = `${labas} ${rytas}, ${lietuva}!`;
 console.log(lrl3);
 
+// teksto ilgis kintamasis.lenth
+
+console.clear();
+
+const n1 = 5 + 7;
+console.log(n1);
+
+const n2 = 5 + '7';
+console.log(n2);
+
+const n3 = '5' + '7';
+console.log(n3);
+
+const n4 = '5' - 7;
+console.log(n4);
+
+const n5 = '7' - '5';
+console.log(n5);
+
+const n6 = 'labas' - 'l';
+console.log(n6);
+
+
+
