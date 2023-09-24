@@ -25,4 +25,37 @@ console.log(back);
 const formatuotastekstas = "Labas \n\rrytas, \n\rLietuva!";
 console.log(formatuotastekstas);
 
+const lrl = "Labas\n\r\
+rytas,\n\r\
+Lietuva!";
+console.log(lrl);
+
+const lrlbacktik = `Labas 
+rytas, 
+Lietuva!`;
+console.log(lrlbacktik);
+
+console.clear();
+
+const vardas = 'Chuck';
+console.log(vardas, '=', vardas.length, 'raides');
+
+const pavarde = 'Noris';
+
+const pilnasvardas  = 'Chuck Noris';
+console.log(pilnasvardas, pilnasvardas.length);
+
+const fullname = vardas + ' ' + pavarde;
+console.log(fullname);
+
+//Labas tytas Lietuva!
+const labas = 'Labas';
+const rytas = 'rytas';
+const lietuva = 'Lietuva';
+const lrl2 = labas + ' ' + rytas + ',' + ' ' + lietuva + '!';
+console.log(lrl2);
+
+//Labas rytas Lietuva!
+const lrl3 = `${labas} ${rytas}, ${lietuva}!`;
+console.log(lrl3);
 
