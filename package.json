@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-"array": "nodemon ./kintamieji/array.js",
-    "boolean": "nodemon ./kintamieji/boolean.js",
+
+    "array": "nodemon ./kintamieji/array.js",
+"object": "nodemon ./kintamieji/object.js",
+"boolean": "nodemon ./kintamieji/boolean.js",
 "string": "nodemon ./kintamieji/string.js",
     "number": "nodemon ./kintamieji/number.js",
        "test": "echo \"Error: no test specified\" && exit 1"

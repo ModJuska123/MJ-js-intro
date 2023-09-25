@@ -65,5 +65,55 @@ const pilnastekstas1 = `"${mano} ${aplankytos} ${vietos}: ${av[0]}, ${av[1]}, ${
 console.log(pilnastekstas1);
 
 
+//1 uzdavinio sprendimas klaseje:
+
+const marks = [10,2,8,4,6];
+let markssum = 0;
+markssum += marks[0];
+markssum += marks[1];
+markssum += marks[2];
+markssum += marks[3];
+markssum += marks[4];
+const marksAverage = markssum / marks.length;
+const studentmarks = `Studento pazymiu vidurkis yra ${marksAverage}.`;
+console.log(studentmarks);
+
+//2 uzdavinio sprendimas klaseje:
+
+const places = ['Siaures asigalis', 'Menulis', 'Pusiaujas'];
+let placesstr = '';
+placesstr += places[0];
+placesstr += ', ';
+placesstr += places[1];
+placesstr += ', ';
+placesstr += places[2];
+const placessentence = `Mano aplankytos vietos: ${placesstr}.`;
+console.log(placessentence);
+
+console.clear();
+
+// +++;
+
+let a = 5;
+let x = 7;
+x = x + (++a);
+console.log(x);
+
+const colors = ['geltona', 'zalia', 'raudona'];
+console.log(colors);
+
+colors[1] = 777;
+console.log(colors);
+console.log('-------------');
+
+const name = 'Chuck';
+console.log(name[0]);
+console.log(name[1]);
+console.log(name[2]);
+console.log(name[3]);
+console.log(name[4]);
+console.log('-------------');
+// pakeisti constantos negalima, isskyrus pakeitus i let.
+
 
 
