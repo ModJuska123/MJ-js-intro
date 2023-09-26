@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-
+"function": "nodemon ./kintamieji/function.js",
     "array": "nodemon ./kintamieji/array.js",
 "object": "nodemon ./kintamieji/object.js",
 "boolean": "nodemon ./kintamieji/boolean.js",
