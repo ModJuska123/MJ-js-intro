@@ -39,22 +39,50 @@ console.log('A yra daugiau uz B');
 
 //   3 sablono panaudojimas
 
-const day = 1;
+const day = 7;
 
 if (day == 1) {
     console.log('Pirmadienis');
-} else if (day == 2) {
+} else if (day % 7 == 2) {
     console.log('Antradienis');
-} else if (day == 3) {
+} else if (day % 7 == 3) {
     console.log('Trečiadienis');
-} else if (day == 4) {
+} else if (day % 7 == 4) {
     console.log('Ketvirtadienis');
-} else if (day == 5) {
+} else if (day % 7 == 5) {
     console.log('Penktadienis');
-} else if (day == 6) {
+} else if (day % 7 == 6) {
     console.log('Šeštadienis');
-} else if (day == 7) {
+} else if (day % 7 == 0) {
     console.log('Sekmadienis');
 } else {
     console.log('Tokia diena neegzistuoja');
 }
+
+//  Kodo nestinimas
+ 
+const diena = 1;
+
+// ND sukurkite funkciją 
+// Sukurkite funkciją, kuri priima skaičių ir priklausomai, 
+// ką sugebame nustatyti apie tą skaičiu išspausdiname atitinkamą sabloną.
+// Kas uzdavinyje nenumatyta?
+
+const number = 7;
+
+if (number == 0 && number % 2 > 0) {
+    console.log('Lyginis skaicius');
+} else if (number % 7 == 2) {
+    console.log('');
+} else if (number % 7 == 3) {
+    console.log('');
+} else if (number % 7 == 4) {
+    console.log('');
+} else if (number % 7 == 5) {
+    console.log('');
+} else if (number % 7 == 6) {
+    console.log('');
+} else if (number % 7 == 0) {
+    console.log('');
+} else {
+    console.log('Toks skaicius neapibreztas');}
