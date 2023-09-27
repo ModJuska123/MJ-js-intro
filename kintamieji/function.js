@@ -67,7 +67,7 @@ console.log(jubiliejai('Ona', 44));
 // Uzdavinys: name: pazymiu vidurkis yra vidurkis;
 
 function studentAverage(name, marks) {
-    let i = 0
+    let i = 0;
     totalSum += marks[i++];
     totalSum += marks[i++];
     totalSum += marks[i++];
