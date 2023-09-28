@@ -11,11 +11,11 @@ console.clear();
 
 // 1 sablono panaudojimas
 if (4 > 2) {
-    console.log('4 yra daugiau uz 2');
+    console.log('4 yra daugiau uz 2'); //spausdina
 }
 
 if (5 < 2) {
-    console.log('5 yra maziau uz 2');
+    console.log('5 yra maziau uz 2'); //neisspausdina
 }
 
 if (true) {
@@ -28,11 +28,9 @@ if (false) {
 
 // 2 sablono panaudojimas
   const a = 7;
-  const b = 12;
-
-  if(true) {
-console.log('A yra daugiau uz B');
-
+  const b = 5;
+  if(a > b) {
+    console.log('A yra daugiau uz B');
   } else {
     console.log('B nera daugiau uz A');
   }
@@ -89,4 +87,4 @@ if (number == 0 && number % 2 > 0) {
 } else {
     console.log('Toks skaicius neapibreztas');}
     */
-console.clear();
+
