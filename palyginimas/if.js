@@ -61,13 +61,15 @@ if (day == 1) {
 
 //  Kodo nestinimas
  
-const diena = 1;
+/*const diena = 1;
+
 
 // ND sukurkite funkciją 
 // Sukurkite funkciją, kuri priima skaičių ir priklausomai, 
 // ką sugebame nustatyti apie tą skaičiu išspausdiname atitinkamą sabloną.
 // Kas uzdavinyje nenumatyta?
 
+/* 
 const number = 7;
 
 if (number == 0 && number % 2 > 0) {
@@ -86,3 +88,5 @@ if (number == 0 && number % 2 > 0) {
     console.log('');
 } else {
     console.log('Toks skaicius neapibreztas');}
+    */
+

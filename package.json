@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palyginimas/if.js",
 "function": "nodemon ./kintamieji/function.js",
     "array": "nodemon ./kintamieji/array.js",
