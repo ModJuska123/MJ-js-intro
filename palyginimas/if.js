@@ -89,4 +89,4 @@ if (number == 0 && number % 2 > 0) {
 } else {
     console.log('Toks skaicius neapibreztas');}
     */
-
+console.clear();
