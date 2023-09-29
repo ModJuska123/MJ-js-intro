@@ -11,7 +11,7 @@ console.clear();
 
 // 1 sablono panaudojimas
 if (4 > 2) {
-    console.log('4 yra daugiau uz 2'); //spausdina
+    console.log('1. 3 yra daugiau uz 2'); //spausdina
 }
 
 if (5 < 2) {
@@ -19,7 +19,7 @@ if (5 < 2) {
 }
 
 if (true) {
-    console.log('true'); //spausdina
+    console.log('2. true'); //spausdina
 }
 
 if (false) {
@@ -28,16 +28,16 @@ if (false) {
 
 // 2 sablono panaudojimas
   const a = 7;
-  const b = 5;
+  const b = 55;
   if(a > b) {
-    console.log('A yra daugiau uz B');
+    console.log('3. A yra daugiau uz B');
   } else {
-    console.log('B nera daugiau uz A');
+    console.log('3. B nera daugiau uz A');
   }
 
 //   3 sablono panaudojimas
 
-const day = 7;
+const day = 8;
 
 if (day == 1) {
     console.log('Pirmadienis');
@@ -59,7 +59,28 @@ if (day == 1) {
 
 //  Kodo nestinimas
  
-/*const diena = 1;
+const diena = 1;
+if (diena === 1)
+{console.log('Pirmadienis');
+} 
+    else {if (diena === 2) {console.log('Antradienis');}
+        else {if (diena === 3) {console.log('Trečiadienis');}
+            else {if (diena === 4) {console.log('Ketvirtadienis');}
+                else {if (diena === 5) {console.log('Penktadienis');}
+                    else {if (diena === 6) {console.log('Šeštadienis');}
+                        else {if (diena === 7) {console.log('Sekmadienis');}
+else {console.log('Tokia diena neegzistuoja');}
+}
+}
+}
+}
+}
+}
+
+const parosMetas ('naktis');
+
+
+
 
 
 // ND sukurkite funkciją 
