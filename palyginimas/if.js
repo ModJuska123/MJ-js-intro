@@ -1,5 +1,15 @@
 /*
 IF - palyginimo sakinys/sąlyga
+Palyginimo operatoriai:
+- visi: >, <, ==, ===, >=, <=, !=, !==
+- naudotini: >, <, ===, >=, <=, !==
+- nenaudotini: ==, !=
+
+Loginiai operatoriai:
+&&, ||, !
+
+
+
 Kodo šablonai:
 if () {}
 if () {} else if () {}
@@ -97,7 +107,7 @@ const parosMetas = 'naktis';
 const arLyja = true; //true
 const kadaSilta = 4;
 const temp = 25;
-const arAsSuStriuke = true;
+const arAsSuStriuke = false;
 
 if(parosMetas === 'diena' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == true) {
 console.log('Einam sokti lietuje! 😏');
@@ -122,15 +132,15 @@ console.log('Einam sokti lietuje! 😏');
     } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == true) {
         console.log('Gal eisiu miegoti ⭐');
     } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == false) {
-        console.log('Gal eisiu miegoti ⭐');
+        console.log('Gal eisiu miegoti ⭐, Ops be striukes');
     } else if(parosMetas === 'naktis' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
         console.log('Gal eisiu miegoti ⭐');
     } else if(parosMetas === 'naktis' && arLyja === true && temp < kadaSilta && arAsSuStriuke == false) {
-        console.log('Gal eisiu miegoti ⭐');
+        console.log('Gal eisiu miegoti ⭐, Ops be striukes');
     } else if(parosMetas === 'naktis' && arLyja === false && temp >= kadaSilta && arAsSuStriuke == true) {
         console.log('Galim eiti paziureti zvaigzdiu ⭐');
     } else if(parosMetas === 'naktis' && arLyja === false && temp >= kadaSilta && arAsSuStriuke == false) {
-        console.log('Galim eiti paziureti zvaigzdiu ⭐');
+        console.log('Galim eiti paziureti zvaigzdiu ⭐, Ops be striukes');
     } 
 
 
