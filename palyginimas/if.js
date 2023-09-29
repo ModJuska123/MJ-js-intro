@@ -77,7 +77,66 @@ else {console.log('Tokia diena neegzistuoja');}
 }
 }
 
-const parosMetas ('naktis');
+// U:
+/*const parosMetas = 'diena';
+const arLyja = false;
+
+if (parosMetas === 'diena') {
+    if(arLyja === true) {console.log('diena ir lyja');}
+else {console.log('diena ir nelyja');}
+} 
+else {if(arLyja === "true") {console.log('naktis ir nelyja');
+} else {console.log('naktis ir nelyja');}
+}
+*/
+
+// U: V2
+console.log('--------');
+
+const parosMetas = 'naktis';
+const arLyja = true; //true
+const kadaSilta = 16;
+const temp = 25;
+const arAsSuStriuke = true;
+
+if(parosMetas === 'diena' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == true) {
+console.log('1');
+} else if(parosMetas === 'diena' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == false) {
+    console.log('2');
+    } else if(parosMetas === 'diena' && arLyja === false && temp >= kadaSilta && arAsSuStriuke == true) {
+        console.log('3');
+    } else if(parosMetas === 'diena' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
+        console.log('4');
+    } else if(parosMetas === 'diena' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
+        console.log('5');
+    } else if(parosMetas === 'diena' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
+        console.log('6');
+    } else if(parosMetas === 'diena' && arLyja === false && temp < kadaSilta && arAsSuStriuke == true) {
+        console.log('7');
+    } else if(parosMetas === 'diena' && arLyja === false && temp < kadaSilta && arAsSuStriuke == fale) {
+        console.log('8');
+    } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == true) {
+        console.log('9');
+    } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == false) {
+        console.log('10');
+    } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == true) {
+        console.log('11');
+    } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == false) {
+        console.log('12');
+    } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == true) {
+        console.log('13');
+    } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == false) {
+        console.log('14');
+    } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == true) {
+        console.log('15');
+    } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == false) {
+        console.log('16');
+    } 
+
+    console.clear()
+
+
+
 
 
 
