@@ -89,57 +89,49 @@ else {if(arLyja === "true") {console.log('naktis ir nelyja');
 } else {console.log('naktis ir nelyja');}
 }
 */
-
+console.log('-----');
 // U: V2
-console.log('--------');
+
 
 const parosMetas = 'naktis';
 const arLyja = true; //true
-const kadaSilta = 16;
+const kadaSilta = 4;
 const temp = 25;
 const arAsSuStriuke = true;
 
 if(parosMetas === 'diena' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == true) {
-console.log('1');
+console.log('Einam sokti lietuje! 😏');
 } else if(parosMetas === 'diena' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == false) {
-    console.log('2');
+    console.log('Einam sokti lietuje! 😏, Ops be striukes');
     } else if(parosMetas === 'diena' && arLyja === false && temp >= kadaSilta && arAsSuStriuke == true) {
-        console.log('3');
+        console.log('Eiline diena rojuje ✌');
+    } else if(parosMetas === 'diena' && arLyja === false && temp >= kadaSilta && arAsSuStriuke == false) {
+        console.log('Eiline diena rojuje ✌');
     } else if(parosMetas === 'diena' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
-        console.log('4');
-    } else if(parosMetas === 'diena' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
-        console.log('5');
-    } else if(parosMetas === 'diena' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
-        console.log('6');
+        console.log('Saltas lietus... niekur neisiu sokti... 💧');
+    } else if(parosMetas === 'diena' && arLyja === true && temp < kadaSilta && arAsSuStriuke == false) {
+        console.log('Saltas lietus... niekur neisiu sokti... 💧, Ops be striukes');
     } else if(parosMetas === 'diena' && arLyja === false && temp < kadaSilta && arAsSuStriuke == true) {
-        console.log('7');
+        console.log('Eiline diena rojuje.. nors ir nelabai silta.. ✌');
     } else if(parosMetas === 'diena' && arLyja === false && temp < kadaSilta && arAsSuStriuke == fale) {
-        console.log('8');
+        console.log('Eiline diena rojuje.. nors ir nelabai silta.. ✌, Ops be striukes');
     } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == true) {
-        console.log('9');
+        console.log('Sedim namie, bet gal ir galima butu iseiti 👀');
     } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == false) {
-        console.log('10');
+        console.log('Sedim namie, bet gal ir galima butu iseiti 👀, Ops be striukes');
     } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == true) {
-        console.log('11');
+        console.log('Gal eisiu miegoti ⭐');
     } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == false) {
-        console.log('12');
-    } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == true) {
-        console.log('13');
-    } else if(parosMetas === 'naktis' && arLyja === true && temp >= kadaSilta && arAsSuStriuke == false) {
-        console.log('14');
-    } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == true) {
-        console.log('15');
-    } else if(parosMetas === 'naktis' && arLyja === false && temp < kadaSilta && arAsSuStriuke == false) {
-        console.log('16');
+        console.log('Gal eisiu miegoti ⭐');
+    } else if(parosMetas === 'naktis' && arLyja === true && temp < kadaSilta && arAsSuStriuke == true) {
+        console.log('Gal eisiu miegoti ⭐');
+    } else if(parosMetas === 'naktis' && arLyja === true && temp < kadaSilta && arAsSuStriuke == false) {
+        console.log('Gal eisiu miegoti ⭐');
+    } else if(parosMetas === 'naktis' && arLyja === false && temp >= kadaSilta && arAsSuStriuke == true) {
+        console.log('Galim eiti paziureti zvaigzdiu ⭐');
+    } else if(parosMetas === 'naktis' && arLyja === false && temp >= kadaSilta && arAsSuStriuke == false) {
+        console.log('Galim eiti paziureti zvaigzdiu ⭐');
     } 
-
-    console.clear()
-
-
-
-
-
-
 
 
 // ND sukurkite funkciją 
