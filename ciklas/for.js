@@ -2,7 +2,7 @@
 
 
 */
-/*
+
 for (let i = 0; i <= 3; i++) {
     console.log(1)}
 
@@ -56,13 +56,14 @@ for(; i1 <= 10;) {
     
 }
 console.log(i1, 'uz ciklo');
-*/
+
 // U.....
 
 function arTestiCikla(index) {
-    if (index <= 10) {return true;}
-    else {return false;
+    if (index <= 10) {return true;
+    } else {return false;
     }
 }
-
-for(let i3 = 0; arTestiCikla; i3 += 2) {console.log.apply(i3, 'ciklas')};
+for(let i = 0; arTestiCikla(i); i += 2) {
+    console.log(i, 'ciklas')
+};
