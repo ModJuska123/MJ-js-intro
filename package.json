@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "method": "nodemon ./method/method.js",
+    "method:string": "nodemon ./method/string.js",
+    "method:number": "nodemon ./method/number.js",
     "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palyginimas/if.js",
 "function": "nodemon ./kintamieji/function.js",

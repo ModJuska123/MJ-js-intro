@@ -1,5 +1,5 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
-
+//Tikrina ra baigtinis skicius
 console.clear();
 
 console.log(isFinite(5));
@@ -23,7 +23,7 @@ if (isFinite(a)) {
 
 console.clear();
 
-//...
+//tikrina ar yra yra de6imtainis skaicius
 const b = 7;
 
 if (isFinite(b) && Number.isInteger(b)) {
@@ -45,7 +45,7 @@ if (isFinite(b)) {
 }
 console.clear();
 
-//...
+//parseInt atpazinti skaicius sveikius.
 
 console.log(parseInt(false));
 console.log(parseInt([]));
@@ -61,7 +61,7 @@ console.log(parseInt('123kkk'));
 
 console.clear();
 
-//...
+// parseFloat atpazinti skaicius desimtainius.
 
 console.log(parseFloat(''));
 console.log(parseFloat('789'));
@@ -76,9 +76,61 @@ console.log(parseFloat('25.888kkk'));
 
 console.clear();
 
-//...
-
+//Tikrina at yra ne skaicius
 console.log(isNaN(5));
 console.log(isNaN(3.14));
 console.log(isNaN(Infinity));
 console.log(isNaN(NaN));
+
+console.clear();
+
+//duoda tieks skaiciu po kablelio, kieks prasoma
+const kaina = 3.14;
+console.log(kaina, '3.14');
+console.log(kaina.toFixed());
+console.log(kaina.toFixed(0));
+console.log(kaina.toFixed(1));
+console.log(kaina.toFixed(2));
+console.log(kaina.toFixed(3));
+console.log(kaina.toFixed(4));
+console.log(kaina.toFixed(5));
+
+
+console.clear();
+
+// parseInt / parseFloat atpazinti skaicius sveikius / desimtainius.
+const keistasSkaicius = 0.1 + 0.2;
+console.log(keistasSkaicius);
+
+const keistasSkaicius2 = keistasSkaicius.toFixed(10);
+console.log(keistasSkaicius2);
+
+const keistasSkaicius3 = parseInt(keistasSkaicius2);
+console.log(keistasSkaicius3);
+
+const keistasSkaicius4 = parseFloat(keistasSkaicius2);
+console.log(keistasSkaicius4);
+
+const keistasSkaicius5 = +'1.23';
+console.log(keistasSkaicius5);
+
+const keistasSkaicius6 = +keistasSkaicius2;
+console.log(keistasSkaicius6);
+
+//to Fixed - duoda skaicius po kablelio, kiek prasomas
+
+const c = 6.999999999999999;
+console.log(c);
+console.log(c.toFixed(5));
+
+const d = 5.6789;
+console.log(d.toFixed(6));
+console.log(d.toFixed(5));
+console.log(d.toFixed(4));
+console.log(d.toFixed(3));
+
+const e = 5.6784;
+console.log(e.toFixed(6));
+console.log(e.toFixed(5));
+console.log(e.toFixed(4));
+console.log(e.toFixed(3));
