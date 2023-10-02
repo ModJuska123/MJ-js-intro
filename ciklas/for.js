@@ -67,3 +67,26 @@ function arTestiCikla(index) {
 for(let i = 0; arTestiCikla(i); i += 2) {
     console.log(i, 'ciklas')
 };
+
+// ...
+
+const word = 'zodis';
+
+for(let i = 0; i < word.length; i++) {
+    console.log(i, `Raide: ${word[i]}`);
+}
+
+//..
+             // 0  1  2  3  4
+const marks = [10, 2, 8, 4, 6];
+let totalSum = 0;
+const amount = marks.length;
+
+for(i = 0; i < amount; i++) {
+    totalSum += marks[i];
+    console.log(`${i}.`, marks[i], '=', totalSum)
+}
+const average = totalSum / amount;
+console.log(marks, 'average is', average);
+
+//.........
