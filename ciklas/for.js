@@ -2,8 +2,7 @@
 
 
 */
-
-
+/*
 for (let i = 0; i <= 3; i++) {
     console.log(1)}
 
@@ -46,3 +45,24 @@ for(i = start + 1; i <= finish; i++) {
 const numberLine3 = `(3|) Skaiciai intervale nuo ${start} iki ${finish} yra: ${numberSequence2}.`
 console.log(numberLine3);
 
+
+// U....
+
+let i1 = 0;
+
+for(; i1 <= 10;) {
+    console.log(i1, 'ciklas');
+    i1 += 2;
+    
+}
+console.log(i1, 'uz ciklo');
+*/
+// U.....
+
+function arTestiCikla(index) {
+    if (index <= 10) {return true;}
+    else {return false;
+    }
+}
+
+for(let i3 = 0; arTestiCikla; i3 += 2) {console.log.apply(i3, 'ciklas')};
