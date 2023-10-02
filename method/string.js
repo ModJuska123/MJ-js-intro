@@ -1,61 +1,29 @@
-
-
-// isveda indexo simboli sklaiustuose
-
-
-
-// isveda simbolio koda
-
-
-// sujungia stringus
-
-
-// Sujungia simbolius
-
-/*let str3 = 'Hello';
-const str4 = 'World';
-
-str3 += ' ';
-str3 += str4;
-console.log(str3);
-
-let str5 = 'Hello';
-str5 += ' ' + str4;
-console.log(str5);
-
 console.clear();
 
-const abc = ['a', 'b', 'c', 'd', 'e', 'f'];
+/*
+.at() -> isveda indekso reiksme
+charCodeAt() -> isveda simbolio Nr.
+.concat(...) -> sujungia stringus
+.includes() -> ar yra atsakyme reiksme (T/F)
+.indexOf() -> isveda simboli pagal vieta
+.repeat() -> pakartoja n kartu
+.replace() ->keicia is x i y
+.replaceAll() -> keicia visas reiksmes
 
-const start = 'Abecele: ';
 
-let a1 = '';
-a1 += start;
-a1 += abc[0];
-a1 += abc[1];
-a1 += abc[2];
-a1 += abc[3];
-a1 += abc[4];
-a1 += abc[5];
-console.log(a1);
+*/
+/*
+console.log('Labas rytas'.includes('a')); // T/F
+console.log('Labas rytas'.indexOf('labas', )); //nurodo indekso reisme, -1 - nera
+console.log('Labas rytas'.indexOf('labas'));
+*/
+// ND naudoti tik IF ir FOR
 
-let a2 = start + abc[0] + abc[1] + abc[2] + abc[3] + abc[4] + abc[5];
-console.log(a2);
-
-let a3 = start;
-
-for (let i = 0; i < abc.length; i++) {
-    a3 += abc[i];
+const labas = 'labas';
+let kiek = 0;
+for(i = 0; i < labas.length; i++) {
+if (labas[i] === 'a') {
+kiek += 1} else {kiek += 0}
+;
 }
-
-console.log(a3);
-
-const a4 = start.concat(...abc);
-console.log(a4);
-
-const a5 = start.concat(abc[0], abc[1], abc[2], abc[3], abc[4], abc[5]);
-console.log(a5);
-*?/
-
-// ar yra atsakyme reiksme
-
+console.log(`${kiek} a zodyje: ${labas}`)
