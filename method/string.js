@@ -9,6 +9,16 @@ charCodeAt() -> isveda simbolio Nr.
 .repeat() -> pakartoja n kartu
 .replace() ->keicia is x i y
 .replaceAll() -> keicia visas reiksmes
+.includes() -> iterpti
+
+.slice( , ) -> atvaizduoja simbolius is texto nuo .. iki .., jei su minusu ima juos nuo galo
+.split() -> atlieka zirkliu darba, isima simbolius is stringo ir gauna masyva
+.startWith() -> grazina Boleana pagal nurodyta pradini simboli
+.endsWith() -> grazina Boleana pagal nurodyta galini simboli
+.toUpperCase() -> grazina texta Didziosiomis raidemis
+.loverCase() -> grazina texta mazosiomis raidemis
+.trim() -> grazina teksta be tarpu isvalant tarpus texto priekuje ir gale (ne zodziuos ar tarp)
+
 
 
 */
