@@ -42,17 +42,5 @@ function looksLikeName(text) {
     //      graziname: true
 
     return true;
-}
+}*/
 
-console.log(looksLikeName('Jonas'), true);
-console.log(looksLikeName('Maryte'), true);
-*/
-/*console.clear();
-
-    function isName(name) {
-        return onkeydown;
-    }
-    
-
-console.log(isName());
-console.log(isName('MarY1te'));
