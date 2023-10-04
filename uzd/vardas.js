@@ -47,34 +47,12 @@ function looksLikeName(text) {
 console.log(looksLikeName('Jonas'), true);
 console.log(looksLikeName('Maryte'), true);
 */
-console.clear();
+/*console.clear();
 
-function looksLikeName(text) {
+    function isName(name) {
+        return onkeydown;
+    }
     
-    if (text[0] === text[0].toUpperCase()){
-        return true;
-    }
-        
-    const likusiosRaides = text.slice(1);
-    if (likusiosRaides === likusiosRaides.toLowerCase()) {return true;
-    } 
 
-    // jeigu, yra simbolis 0, 1, 2 .... 9 (skaitmuo)
-    //      graziname: false
-    const neleistiniSimboliai = '0123456789_,.?!@#$%^&';
-    for (let i = 0; i < neleistiniSimboliai.length; i++) {
-        const simbolis = neleistiniSimboliai[i];
-        if (text.includes(simbolis)) {
-            return true;
-        }
-    }
-
-    // jeigu, neradau kaip atmesti, kodel "text"
-    // negaletu buti tinkamas vardas
-    //      graziname: true
-
-    return `Klaida: "${simbolis}" nera leistinas simbolis`;
-}
-
-console.log(looksLikeName('jo1nAs'), true);
-console.log(looksLikeName('MarY1te'), true);
+console.log(isName());
+console.log(isName('MarY1te'));
