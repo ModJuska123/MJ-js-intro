@@ -1,8 +1,8 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 //Tikrina ra baigtinis skicius
-console.clear();
 
-console.log(isFinite(5));
+/*
+console.log(isFinite(6));
 console.log(isFinite(3.14));
 console.log(isFinite(-5));
 console.log(isFinite(-3.14));
@@ -21,7 +21,6 @@ if (isFinite(a)) {
     console.log('Ne');
 }
 
-console.clear();
 
 //tikrina ar yra yra de6imtainis skaicius
 const b = 7;
@@ -43,7 +42,7 @@ if (isFinite(b)) {
 } else {
     console.log('Ne normalus skaicius: NaN arba Infinity');
 }
-console.clear();
+
 
 //parseInt atpazinti skaicius sveikius.
 
@@ -59,7 +58,7 @@ console.log(parseInt('123.456'));
 console.log(parseInt('Infinity'));
 console.log(parseInt('123kkk'));
 
-console.clear();
+
 
 // parseFloat atpazinti skaicius desimtainius.
 
@@ -74,7 +73,7 @@ console.log(parseFloat('asd-789.101asd'));
 console.log(parseFloat('-asd789.101asd'));
 console.log(parseFloat('25.888kkk'));
 
-console.clear();
+
 
 //Tikrina at yra ne skaicius
 console.log(isNaN(5));
@@ -82,7 +81,7 @@ console.log(isNaN(3.14));
 console.log(isNaN(Infinity));
 console.log(isNaN(NaN));
 
-console.clear();
+
 
 //duoda tieks skaiciu po kablelio, kieks prasoma
 const kaina = 3.14;
@@ -94,9 +93,6 @@ console.log(kaina.toFixed(2));
 console.log(kaina.toFixed(3));
 console.log(kaina.toFixed(4));
 console.log(kaina.toFixed(5));
-
-
-console.clear();
 
 // parseInt / parseFloat atpazinti skaicius sveikius / desimtainius.
 const keistasSkaicius = 0.1 + 0.2;
@@ -134,3 +130,26 @@ console.log(e.toFixed(6));
 console.log(e.toFixed(5));
 console.log(e.toFixed(4));
 console.log(e.toFixed(3));
+
+console.clear();
+*/
+//Auksciau Rimanto pavyzdziai, nuo cia mano 
+//isFinite(num|NaN)
+console.log(isFinite(10));
+
+// Number.isFinite(num|NaN)
+console.log(Number.isInteger(-10.5));
+
+//Number.pareseInt('')
+console.log(Number.parseInt('10kkk'));
+
+//Number.pareseFloat('')
+console.log(Number.parseFloat('10.1KKK'));
+
+//Number.isNaN('')
+console.log(isNaN('10'));
+
+//.toFixed('')
+const kaina = 3.14;
+console.log(kaina.toFixed(1));
+
