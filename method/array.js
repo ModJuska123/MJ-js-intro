@@ -1,4 +1,9 @@
-/**/
+/*
+
+*/
+
+console.clear();
 
 
-console.log*/
+// 
+console.log([10, 15, 20, 30].at(-1));
