@@ -72,3 +72,16 @@ function addLength(str2) {
 const words = str2.split(" ");
 return words.map(str2 => `${str2} ${str2.length}`);}
 console.log(addLength('Hello World'));
+
+
+
+
+
+function flickSwitch(arr){
+
+  if ('arr' !== 'flick') {return true}
+   else {return false} 
+}
+
+console.log('flick')
+console.log('flick')
