@@ -45,7 +45,7 @@ function getASCII(index) {
  const indexASCII = index.charCodeAt();
  return indexASCII;
 }
-console.log(getASCII('c'));
+console.log(getASCII('d'));
 
 // In this Kata we are passing a number (n) into a function.
 // Your code will determine if the number passed is even (or not).
@@ -73,15 +73,14 @@ const words = str2.split(" ");
 return words.map(str2 => `${str2} ${str2.length}`);}
 console.log(addLength('Hello World'));
 
+// Create a function that always returns true for every item in a given list. 
+// However, if an element is the word "flick", switch to always returning the opposite 
+// boolean value.
 
-
-
-
-function flickSwitch(arr){
-
-  if ('arr' !== 'flick') {return true}
-   else {return false} 
+const arrayFalse = 'flick';
+const arr = ['word', 'flick'];
+function flickSwitch(arr) {
+const arrayPlusMeaning = arr.includes(arrayFalse); 
+if(arrayPlusMeaning === true) {return true};
 }
-
-console.log('flick')
-console.log('flick')
+console.log('arrayPlusMeaning');
