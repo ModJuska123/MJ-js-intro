@@ -40,3 +40,33 @@ console.log(Array.isArray('1'));
 
 const marks3 = [10, 2, 8, 9];
 console.log(marks3.join('-'));
+
+
+// .push('') naujas irasas i masyva
+
+const flowers = ['tulpe', 'kardelis'];
+console.log(flowers);
+
+flowers.push('rose');
+console.log(flowers);
+
+// .pos('') remoovina paskutini elementa is masyvo
+
+flowers.pop();
+console.log(flowers);
+
+// .shift pasalina pirma elementa is masyvo
+
+flowers.shift();
+console.log(flowers);
+
+// .unshift naujas irasas i masyva (prieki)
+
+flowers.unshift('ruta');
+console.log(flowers);
+
+// .reverse nuskaito masyva nuo galo
+
+flowers.reverse(flowers);
+console.log(flowers);
+
