@@ -153,3 +153,16 @@ console.log(isNaN('10'));
 const kaina = 3.14;
 console.log(kaina.toFixed(1));
 
+// .slice -> iskerpa simbolius nurodytus sklaistuose
+
+const numbers6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers61 = numbers6.splice(0, 4);
+console.log(numbers6);
+
+// .splice -> trina dali iraso, pagal nurodyta skaisiu indekso, tada iraso naujas
+
+
+const numbers8 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers81 =numbers8.splice(6, 2, 111);
+console.log(numbers8);
+
