@@ -169,7 +169,7 @@ const min = 100;
 
 const delfTaskai = [96, 108, 89, 97, 112, 101, 97, 112, 101];
 let delfTaskuSuma = 0;
-for(i = 1; i < 9; i++) {
+for(i = 0; i < 9; i++) {
   delfTaskuSuma += delfTaskai[i];
 }
 let delfTaskuVidurkis = delfTaskuSuma / 9;
@@ -177,7 +177,7 @@ delfTaskuVidurkis = Number.parseInt(delfTaskuVidurkis);
 
 const koalTaskai = [88, 91, 110, 109, 95, 123, 109, 95, 106];
 let koalTaskuSuma = 0;
-for(i = 1; i < 9; i++) {
+for(i = 0; i < 9; i++) {
   koalTaskuSuma += koalTaskai[i];
 }
 let koalTaskuVidurkis = koalTaskuSuma / 9;
@@ -189,7 +189,3 @@ if((koalTaskuVidurkis < min && delfTaskuVidurkis < min) || koalTaskuVidurkis == 
     console.log(`Lamejo koalos ${koalTaskuVidurkis}-${delfTaskuVidurkis}`)
   } else if(delfTaskuVidurkis >= min && delfTaskuVidurkis > koalTaskuVidurkis)
 {console.log(`Lamejo delfinai ${delfTaskuVidurkis}-${koalTaskuVidurkis}`)}
-console.log(delfTaskuVidurkis);
-console.log(koalTaskuVidurkis);
-
-
