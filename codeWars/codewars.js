@@ -73,14 +73,123 @@ const words = str2.split(" ");
 return words.map(str2 => `${str2} ${str2.length}`);}
 console.log(addLength('Hello World'));
 
+
 // Create a function that always returns true for every item in a given list. 
 // However, if an element is the word "flick", switch to always returning the opposite 
 // boolean value.
+console.log('-------')
 
-const arrayFalse = 'flick';
-const arr = ['word', 'flick'];
-function flickSwitch(arr) {
-const arrayPlusMeaning = arr.includes(arrayFalse); 
-if(arrayPlusMeaning === true) {return true};
+
+const test = ["codewars", "flick", "code", "wars", "flick", "meh", "flick", "asd", "asd"];
+function flickSwitch(arr){
+  let flick = true;
+  let out = [];
+  for(let i = 0; i < arr.length; i++)
+  {
+      if(arr[i] == "flick")
+          flick = !flick;
+      out.push(flick);
+  }
+  return out;
 }
-console.log('arrayPlusMeaning');
+
+let a = flickSwitch(test);
+console.log(a);
+// !!! Nesigavo, prasiau pagalbos!!!
+
+
+// Manto uzduotys:
+// 1 Užduotis
+// Markas ir Johnas bando palyginti savo KMI (kūno masės indeksą), kuris yra
+// apskaičiuojamas pagal formulę:
+// KMI = masė / ūgis ** 2 = masė / (ūgis * ūgis) (masė kg ir aukštis metrais).
+// Jūsų užduotys:
+// 1. Išsaugokite Marko ir Jono masę ir ūgį kintamaisiais
+// 2. Apskaičiuokite abiejų jų KMI naudodami formulę 
+// 3. Sukurkite true false kintamąjį „markHigherBMI“ su informacija apie ar Marko KMI didesnis nei Jono.
+
+// Bandymo duomenys:
+// § 1 duomenys: sveria 78 kg ir yra 1,69 m ūgio. Jonas sveria 92 kg ir yra 1,95 ūgio
+// m aukščio.
+// § 2 duomenys: sveria 95 kg ir yra 1,88 m ūgio. Jonas sveria 85 kg ir yra 1,76 ūgio
+// m aukščio.
+
+// 1 bandymas
+const maseJonoKg = [92, 85];
+const ugisJonoM = [1.95, 1.76];
+const maseMarkoKg = [78, 95];
+const ugisMarkoM = [1.69, 1.88];
+const jonoKMI = maseJonoKg[0] / ugisJonoM[0] * ugisJonoM[0];
+const markoKMI = maseMarkoKg[0] / ugisMarkoM[0] * ugisMarkoM[0];
+
+const jonoKMI2 = maseJonoKg[1] / ugisJonoM[1] * ugisJonoM[1];
+const markoKMI2 = maseMarkoKg[1] / ugisMarkoM[1] * ugisMarkoM[1];
+
+const markHigherBMI = markoKMI > jonoKMI;
+const markHigherBMI2 = markoKMI2 > jonoKMI2;
+
+console.log(`BD1: Marko KMI didesnis nei Jono - ${markHigherBMI} ${markoKMI} vs ${jonoKMI}`);
+console.log(`BD2: Marko KMI didesnis nei Jono - ${markHigherBMI2} ${markoKMI2} vs ${jonoKMI2}`);
+
+
+//  2 Užduotis
+
+// Naudokite KMI pavyzdį iš 1 iššūkio ir kodą, kurį jau parašėte, ir pagerinti jį.
+// Jūsų užduotys:
+// 1. Išspausdinkite gražią išvestį į konsole ar terminalą, nurodydami, kas turi didesnį KMI. Žinutė
+// yra arba "Marko KMI didesnis nei Jono!" arba "Jono KMI yra didesnis nei Marko!"
+// 2. Naudokite Template literals, kad įtrauktumėte KMI reikšmes į išvestis. Pavyzdys: „Marko
+// KMI (28,3) yra didesnis nei Jono (23,9)!
+
+
+console.log(`Jono KMI (${jonoKMI}) yra didesnis nei Marko (${markoKMI})!`);
+console.log(`Marko KMI (${markoKMI2}) didesnis nei Jono (${jonoKMI})!`);
+
+// 3 užduotis
+// Yra dvi gimnastikos komandos – delfinai ir koalos. Jie varžosi viena prieš kitą 3 kartus. 
+// Nugalėtojas, surinkęs didžiausią balų vidurkį, laimi trofėjų!
+// Jūsų užduotys:
+//  Apskaičiuokite kiekvienos komandos taškų vidurkį, naudodami toliau pateiktus testo duomenis
+//             2. Palyginkite komandos balų vidurkį, kad nustatytumėte konkurso nugalėtoją.
+// ir atsispausdinkite į konsolę. Nepamirškite, kad gali būti lygios, todėl išbandykite tai
+// taip pat (lygiosios reiškia, kad jie turi tą patį vidutinį balą)
+//                3.  bonus užduotis: įtraukite reikalavimą turėti mažiausiai 100 balų. 
+// Pagal šią taisyklę
+// komanda laimi tik tuo atveju, jei ji turi didesnį balą nei kita komanda, ir tuo pačiu
+// surinkti ne mažiau kaip 100 taškų. 
+//                4. bonus užduotis  Minimalus rezultatas taip pat taikomas lygiosioms! Taigi lygiosios įvyksta tik tada, kai abi komandos turi vienodą rezultatą ir abi turi didesnį arba lygų 100 balų
+// taškų. Priešingu atveju jokia komanda nelaimės trofėjaus
+
+// Bandymo duomenys:
+// § 1 duomenys: delfinai surinko 96, 108 ir 89 balus. Koalos balai 88, 91 ir 110
+// § Duomenų bonus užduočiai 1: delfinų balai 97, 112 ir 101. Koalos balai 109, 95 ir 123
+// § 2 duomenų bonus užduočiai: delfinų balai 97, 112 ir 101. Koalos balai 109, 95 ir 106
+
+const min = 100;
+
+const delfTaskai = [96, 108, 89, 97, 112, 101, 97, 112, 101];
+let delfTaskuSuma = 0;
+for(i = 1; i < 9; i++) {
+  delfTaskuSuma += delfTaskai[i];
+}
+let delfTaskuVidurkis = delfTaskuSuma / 9;
+delfTaskuVidurkis = Number.parseInt(delfTaskuVidurkis);
+
+const koalTaskai = [88, 91, 110, 109, 95, 123, 109, 95, 106];
+let koalTaskuSuma = 0;
+for(i = 1; i < 9; i++) {
+  koalTaskuSuma += koalTaskai[i];
+}
+let koalTaskuVidurkis = koalTaskuSuma / 9;
+koalTaskuVidurkis = Number.parseInt(koalTaskuVidurkis);
+
+if((koalTaskuVidurkis < min && delfTaskuVidurkis < min) || koalTaskuVidurkis == delfTaskuVidurkis) {
+  console.log(`lygiosios`)
+} else if(koalTaskuVidurkis >= min && koalTaskuVidurkis > delfTaskuVidurkis) {
+    console.log(`Lamejo koalos ${koalTaskuVidurkis}-${delfTaskuVidurkis}`)
+  } else if(delfTaskuVidurkis >= min && delfTaskuVidurkis > koalTaskuVidurkis)
+{console.log(`Lamejo delfinai ${delfTaskuVidurkis}-${koalTaskuVidurkis}`)}
+console.log(delfTaskuVidurkis);
+console.log(koalTaskuVidurkis);
+
+
