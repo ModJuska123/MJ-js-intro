@@ -210,3 +210,6 @@ console.log(repeatStr(num, str));
 
 const repeatStr2 = (n, s) => s["repeat"](n); //CW veikia, bet man ne.
 
+const repeatStr3 = (n, s) => s["repeat"](n);
+console.log(repeatStr3(3, "Hello"));
+console.log(repeatStr3(5, "abc"));
