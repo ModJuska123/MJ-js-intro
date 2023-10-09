@@ -189,3 +189,24 @@ if((koalTaskuVidurkis < min && delfTaskuVidurkis < min) || koalTaskuVidurkis == 
     console.log(`Lamejo koalos ${koalTaskuVidurkis}-${delfTaskuVidurkis}`)
   } else if(delfTaskuVidurkis >= min && delfTaskuVidurkis > koalTaskuVidurkis)
 {console.log(`Lamejo delfinai ${delfTaskuVidurkis}-${koalTaskuVidurkis}`)}
+
+
+console.clear();
+
+// Write a function that accepts an integer n and a string s as parameters, 
+// and returns a string of s repeated exactly n times.
+// Examples (input -> output)
+// 6, "I"     -> "IIIIII"
+// 5, "Hello" -> "HelloHelloHelloHelloHello"
+
+let str = 'hello';  
+const num = 5;
+function repeatStr (n, s) {
+  return `${num}, ${str} ${str.repeat(num-1)}`;
+}
+console.log(repeatStr(num, str));
+
+// V2 is interneto:
+
+const repeatStr2 = (n, s) => s["repeat"](n); //CW veikia, bet man ne.
+
