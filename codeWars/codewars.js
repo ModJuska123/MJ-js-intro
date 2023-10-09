@@ -213,3 +213,21 @@ const repeatStr2 = (n, s) => s["repeat"](n); //CW veikia, bet man ne.
 const repeatStr3 = (n, s) => s["repeat"](n);
 console.log(repeatStr3(3, "Hello"));
 console.log(repeatStr3(5, "abc"));
+
+// .a.a..a
+
+
+function breakCamelCase(str) {
+  let result = '';
+  
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+          if (char === char.toUpperCase()) {
+            result += ' ' + char;
+    } else {
+            result += char;
+    }
+  }
+    return result;
+}
+console.log(breakCamelCase('breakCamelCase'));
