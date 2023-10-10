@@ -231,3 +231,38 @@ function breakCamelCase(str) {
     return result;
 }
 console.log(breakCamelCase('breakCamelCase'));
+
+// // Example usage: Write a function that calculates the original product 
+// price, without VAT.
+// Example:
+// If a product price is 200.00 and VAT is 15%, then the final product price 
+// (with VAT) is: 200.00 + 15% = 230.00
+// Thus, if your function receives 230.00 as input, it should return 200.00
+// Notes:
+// VAT is always 15% for the purposes of this Kata. Round the result to 2 
+// decimal places.
+// If null value given then return -1
+
+
+function excludingVatPrice(priceWithVat) {
+  // Check if the input is null or not a number
+  if (priceWithVat === null || isNaN(priceWithVat)) {
+    return -1;
+  }
+
+  // Calculate the original price without VAT (testuoti)
+  const originalPrice = priceWithVat / 1.15; // 1 + 0.15 (15% VAT)
+  
+  // Round the result to 2 decimal places
+  const roundedPrice = Math.round(originalPrice * 100) / 100;
+
+  return roundedPrice;
+}
+
+// Example usage:
+const priceWithVat = 333.00;
+const originalPrice = excludingVatPrice(priceWithVat);
+console.log(originalPrice); // Outputs 200.00
+
+// Git ex1
+excludingVatPrice = p => p === null ? -1 : +(p / 1.15).toFixed(2);
