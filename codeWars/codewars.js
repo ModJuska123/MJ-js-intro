@@ -119,8 +119,8 @@ const maseJonoKg = [92, 85];
 const ugisJonoM = [1.95, 1.76];
 const maseMarkoKg = [78, 95];
 const ugisMarkoM = [1.69, 1.88];
-const jonoKMI = maseJonoKg[0] / ugisJonoM[0] * ugisJonoM[0];
-const markoKMI = maseMarkoKg[0] / ugisMarkoM[0] * ugisMarkoM[0];
+const jonoKMI = maseJonoKg[0] / (ugisJonoM[0] * ugisJonoM[0]);
+const markoKMI = maseMarkoKg[0] / (ugisMarkoM[0] * ugisMarkoM[0]);
 
 const jonoKMI2 = maseJonoKg[1] / ugisJonoM[1] * ugisJonoM[1];
 const markoKMI2 = maseMarkoKg[1] / ugisMarkoM[1] * ugisMarkoM[1];
@@ -254,13 +254,13 @@ function excludingVatPrice(priceWithVat) {
   const originalPrice = priceWithVat / 1.15; // 1 + 0.15 (15% VAT)
   
   // Round the result to 2 decimal places
-  const roundedPrice = Math.round(originalPrice * 100) / 100;
+  const roundedPrice = originalPrice.toFixed(2);
 
   return roundedPrice;
 }
 
 // Example usage:
-const priceWithVat = 333.00;
+const priceWithVat = 230.111;
 const originalPrice = excludingVatPrice(priceWithVat);
 console.log(originalPrice); // Outputs 200.00
 
@@ -284,23 +284,18 @@ excludingVatPrice = p => p === null ? -1 : +(p / 1.15).toFixed(2);
 // § 2 duomenys: sveria 95 kg ir yra 1,88 m ūgio. Jonas sveria 85 kg ir yra 1,76 ūgio
 // m aukščio.
 
-const jonoUgis = 1.95;
+const jonoUgis = 1.95; 
 const jonoSvoris = 92;
 const markoSvoris = 78;
 const markoUgis = 1.69;
 
-const kmi = function (ugis, svoris) {
-return +(svoris / (ugis * ugis)).toFixed(1);
-}
+const kmi = (ugis, svoris) => (svoris / (ugis * ugis)).toFixed(1);
 const jonoKMI1 = kmi(jonoUgis, jonoSvoris);
 const markoKMI1 = kmi(markoUgis, markoSvoris);
-console.log(typeof kmi(jonoUgis, jonoSvoris));
-console.log(typeof kmi(markoUgis, markoSvoris));
 
-if(markoKMI1 > jonoKMI1) {
-console.log(`„markHigherBMI - true`);
-}
-if(jonoKMI1 > markoKMI1) {
-  console.log(`„markHigherBMI - false`);
-  }
+console.log(kmi(jonoUgis, jonoSvoris));
+console.log(kmi(markoUgis, markoSvoris));
 
+const palyginimas = markoKMI1 > jonoKMI1 ? 
+console.log(`„markHigherBMI - true`) : 
+console.log(`„markHigherBMI - false`);
