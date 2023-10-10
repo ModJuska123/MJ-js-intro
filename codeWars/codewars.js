@@ -266,3 +266,41 @@ console.log(originalPrice); // Outputs 200.00
 
 // Git ex1
 excludingVatPrice = p => p === null ? -1 : +(p / 1.15).toFixed(2);
+
+
+// Manto uzduotys:
+// 1 Užduotis
+// Markas ir Johnas bando palyginti savo KMI (kūno masės indeksą), kuris yra
+// apskaičiuojamas pagal formulę:
+// KMI = masė / ūgis ** 2 = masė / (ūgis * ūgis) (masė kg ir aukštis metrais).
+// Jūsų užduotys:
+// 1. Išsaugokite Marko ir Jono masę ir ūgį kintamaisiais
+// 2. Apskaičiuokite abiejų jų KMI naudodami formulę 
+// 3. Sukurkite true false kintamąjį „markHigherBMI“ su informacija apie ar Marko KMI didesnis nei Jono.
+
+// Bandymo duomenys:
+// § 1 duomenys: sveria 78 kg ir yra 1,69 m ūgio. Jonas sveria 92 kg ir yra 1,95 ūgio
+// m aukščio.
+// § 2 duomenys: sveria 95 kg ir yra 1,88 m ūgio. Jonas sveria 85 kg ir yra 1,76 ūgio
+// m aukščio.
+
+const jonoUgis = 1.95;
+const jonoSvoris = 92;
+const markoSvoris = 78;
+const markoUgis = 1.69;
+
+const kmi = function (ugis, svoris) {
+return +(svoris / (ugis * ugis)).toFixed(1);
+}
+const jonoKMI1 = kmi(jonoUgis, jonoSvoris);
+const markoKMI1 = kmi(markoUgis, markoSvoris);
+console.log(typeof kmi(jonoUgis, jonoSvoris));
+console.log(typeof kmi(markoUgis, markoSvoris));
+
+if(markoKMI1 > jonoKMI1) {
+console.log(`„markHigherBMI - true`);
+}
+if(jonoKMI1 > markoKMI1) {
+  console.log(`„markHigherBMI - false`);
+  }
+
