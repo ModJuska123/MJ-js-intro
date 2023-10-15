@@ -267,4 +267,3 @@ console.log(originalPrice); // Outputs 200.00
 // Git ex1
 excludingVatPrice = p => p === null ? -1 : +(p / 1.15).toFixed(2);
 
-

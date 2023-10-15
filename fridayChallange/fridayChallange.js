@@ -75,3 +75,109 @@ const total = bill[i] + tip;
 // printing final results in one sentence:
 console.log(`Sąskaita buvo ${bill[i]}, arbatpinigiai ${tip}, o bendra vertė ${total}`);
 }
+console.clear();
+
+// 2023-10-13 d. Manto uzduotys:
+// 1. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir 
+// pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
+
+const vardas = 'Tom';
+const pavarde = 'Cruise';
+const trumpesnisZodis = vardas.length < pavarde.length ? vardas: pavarde;
+console.log(`Trumpesnis zodis yra: ${trumpesnisZodis}`)
+
+// 2. Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus 
+// ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus 
+// paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius 
+// atspausdintų tokį sakinį :
+// "Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
+
+const vardas1 = 'Jonas';
+const pavarde1 = 'Jonaitis';
+const gimimoMetai = 1985;
+const metaiDabar = 2023;
+console.log(`Aš esu ${vardas1} ${pavarde1}. Man yra ${metaiDabar - gimimoMetai} metai(ų)`);
+
+// 3. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir 
+// pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, 
+// sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį 
+// atspausdinti.
+
+const vardas2 = 'Tom';
+const pavarde2 = 'Cruise';
+const stringas = vardas2.slice(-3) + pavarde2.slice(-3);
+console.log(`Stringas is vardo ir pavardes yra: "${stringas}"`);
+
+// 4. Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. 
+// Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  
+// Rezultatą atspausdinti.
+
+let stringas1 = '“Once upon a time in hollywood”';
+stringas1 = stringas1.replaceAll('O', '*').replaceAll('o', '*');
+console.log(stringas1);
+
+// 5. Sukurkite keturis kintamuosius kuriems sugeneruokite atsitiktines reikšmes 
+// nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų.
+
+const pirmas = Math.floor(Math.random() * (3 - 0) + 0);
+const antras = Math.floor(Math.random() * (3 - 0) + 0);
+const tercias = Math.floor(Math.random() * (3 - 0) + 0);
+const ketvirtas = Math.floor(Math.random() * (3 - 0) + 0);
+
+console.log(pirmas);
+console.log(antras);
+console.log(tercias);
+console.log(ketvirtas);
+
+const nuliuSkaicius = (pirmas === 0 ? 1 : 0) + (antras === 0 ? 1 : 0) + (tercias === 0 ? 1 : 0) + (ketvirtas === 0 ? 1 : 0);
+const vienetuSkaicius = (pirmas === 1 ? 1 : 0) + (antras === 1 ? 1 : 0) + (tercias === 1 ? 1 : 0) + (ketvirtas === 1 ? 1 : 0);
+const dvejetuSkaicius = (pirmas === 2 ? 1 : 0) + (antras === 2 ? 1 : 0) + (tercias === 2 ? 1 : 0) + (ketvirtas === 2 ? 1 : 0);
+
+console.log(`skaiciuokle: 0 = ${nuliuSkaicius}, 1 = ${vienetuSkaicius}, 2 = ${dvejetuSkaicius}`);
+
+console.log('--------');
+
+// 6. Pasinaudokite atsitiktinio skaičiaus generavimo funkcija. Sukurkite du 
+// kintamuosius ir naudodamiesi funkcija jiems priskirkite atsitiktines reikšmes 
+// nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą 
+// jį suapvalinę iki 2 skaičių po kablelio.
+
+const a = Math.floor(Math.random() * (4 - 0) + 0);
+const b = Math.floor(Math.random() * (4 - 0) + 0);
+console.log(a);
+console.log(b);
+const c = a > b ? (a / b) : (b / a);
+
+console.log(c.toFixed(2));
+console.log('---------');
+// 7. Naudokite funkciją ir sukurkite tris kintamuosius kuriems priskirkite 
+// atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite vidurinę 
+// reikšmę.
+
+const a1 = Math.floor(Math.random() * (25 - 0) + 0);
+const b1 = Math.floor(Math.random() * (25 - 0) + 0);
+const c1 = Math.floor(Math.random() * (25 - 0) + 0);
+const arr1 = [a1, b1, c1];
+console.log(arr1);
+const max = Math.max(...arr1); 
+const min = Math.min(...arr1); 
+
+for (let i = 0; i < arr1.length; i++) {
+    const currentNumber = arr1[i];
+    if(currentNumber != min && currentNumber[i] != max) {return arr1[i]};
+    console.log(`Vidurine reiksme: ${arr1[i]}`);
+    }
+    // Nesigavo ?????
+
+
+// 8. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą 
+// ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, 
+// sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+
+const vardas3 = 'Sandra';
+const pavarde3 = 'Bullock';
+const bendrasZodis = 'vardas3' + 'pavarde3';
+console.log(bendrasZodis);
+
+
+
