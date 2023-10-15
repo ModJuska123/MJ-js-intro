@@ -154,30 +154,50 @@ console.log('---------');
 // atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite vidurinę 
 // reikšmę.
 
-const a1 = Math.floor(Math.random() * (25 - 0) + 0);
-const b1 = Math.floor(Math.random() * (25 - 0) + 0);
-const c1 = Math.floor(Math.random() * (25 - 0) + 0);
-const arr1 = [a1, b1, c1];
-console.log(arr1);
-const max = Math.max(...arr1); 
-const min = Math.min(...arr1); 
+// const a1 = Math.floor(Math.random() * (25 - 0) + 0);
+// const b1 = Math.floor(Math.random() * (25 - 0) + 0);
+// const c1 = Math.floor(Math.random() * (25 - 0) + 0);
+// const arr1 = [a1, b1, c1];
+// console.log(arr1);
+// const max = Math.max(...arr1); 
+// const min = Math.min(...arr1); 
 
-for (let i = 0; i < arr1.length; i++) {
-    const currentNumber = arr1[i];
-    if(currentNumber != min && currentNumber[i] != max) {return arr1[i]};
-    console.log(`Vidurine reiksme: ${arr1[i]}`);
-    }
+// for (let i = 0; i < arr1.length; i++) {
+//     const currentNumber = arr1[i];
+//     if(currentNumber != min && currentNumber[i] != max) {return arr1[i]};
+//     console.log(`Vidurine reiksme: ${arr1[i]}`);
+//     }
     // Nesigavo ?????
+
 
 
 // 8. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą 
 // ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, 
 // sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
 
-const vardas3 = 'Sandra';
-const pavarde3 = 'Bullock';
-const bendrasZodis = 'vardas3' + 'pavarde3';
-console.log(bendrasZodis);
+// const autoriausVardas = 'Sandra';
+// const autoriausPavarde = 'Bullock';
+// const strindasJungtinis = autoriausVardas + autoriausPavarde;
+// console.log(autoriausVardas);
 
+const vardas12 = 'Chuck';
+const pavarde12 = 'Norris';
 
+const fullname = vardas12 + pavarde12;
+console.log(fullname);
+
+console.log('---------');
+
+// 10 Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų 
+// raidžių. Stringo ilgis 3 simboliai. Ats://https://www.youtube.com/watch?v=jww3V2fSQyg
+
+createRandomString(3)
+function createRandomString(stringlength){
+    let randomString = '';
+    const characters = 'abcdefghijklmnopqrstuvwxwz';
+    for(let i = 0; i < stringlength; i++) {
+        randomString += characters.charAt(Math.floor(Math.random() * characters.length))
+        }
+        console.log(randomString);
+    }
 
