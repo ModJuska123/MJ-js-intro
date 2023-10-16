@@ -267,3 +267,65 @@ console.log(originalPrice); // Outputs 200.00
 // Git ex1
 excludingVatPrice = p => p === null ? -1 : +(p / 1.15).toFixed(2);
 
+console.clear();
+
+// Is the string uppercase? Task Create a method to see whether the string 
+// is ALL CAPS. Examples (input -> output)
+// "c" -> False
+// "C" -> True
+// In this Kata, a string is said to be in ALL CAPS whenever it does not 
+// contain any lowercase letter so any string containing no letters at all is 
+// trivially considered to be in ALL CAPS.
+// https://www.codewars.com/kata/56cd44e1aa4ac7879200010b/train/javascript 
+
+
+// const stringPrototype = 'Hello';
+// function strinToBoolean(){
+//   let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXVZ';
+//   for (let i = 0; i < characters.length; i++) {
+//     characters = characters[i];
+//  if(stringPrototype.includes(characters[i])) {console.log('true')} else {console.log(false)};
+//     console.log(characters[i]);
+    
+//   }
+// }
+// console.log(`Is a string yes`)
+const str5 = "MIKE";
+function isUpperCase(str5) {
+  return str5 === str5.toUpperCase();
+}
+console.log(isUpperCase(str5));
+/// man veikia, CW meta klaidas
+
+// https://www.codewars.com/kata/515e188a311df01cba000003/solutions/javascript 
+
+function getPlanetName(id){
+  switch(id){
+    case 1:
+      return 'Mercury'
+    case 2:
+      return 'Venus'
+    case 3:
+      return 'Earth'
+    case 4:
+      return 'Mars'
+    case 5:
+      return 'Jupiter'
+    case 6:
+      return 'Saturn'
+    case 7:
+      return 'Uranus'
+    case 8:
+      return 'Neptune'
+  }
+
+}
+console.log(getPlanetName(3));
+
+// https://www.codewars.com/kata/515e188a311df01cba000003/solutions/javascript
+
+function getPlanetName(i){
+  return (['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune'])[i-1];
+}
+console.log(getPlanetName(2))
+
