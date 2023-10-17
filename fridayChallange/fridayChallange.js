@@ -150,23 +150,24 @@ const c = a > b ? (a / b) : (b / a);
 
 console.log(c.toFixed(2));
 console.log('---------');
+
 // 7. Naudokite funkciją ir sukurkite tris kintamuosius kuriems priskirkite 
 // atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite vidurinę 
 // reikšmę.
 
-// const a1 = Math.floor(Math.random() * (25 - 0) + 0);
-// const b1 = Math.floor(Math.random() * (25 - 0) + 0);
-// const c1 = Math.floor(Math.random() * (25 - 0) + 0);
-// const arr1 = [a1, b1, c1];
-// console.log(arr1);
-// const max = Math.max(...arr1); 
-// const min = Math.min(...arr1); 
+const a1 = Math.floor(Math.random() * (25 - 0) + 0);
+const b1 = Math.floor(Math.random() * (25 - 0) + 0);
+const c1 = Math.floor(Math.random() * (25 - 0) + 0);
+const arr1 = [a1, b1, c1];
+console.log(arr1);
+const max = Math.max(...arr1); 
+const min = Math.min(...arr1); 
 
-// for (let i = 0; i < arr1.length; i++) {
-//     const currentNumber = arr1[i];
-//     if(currentNumber != min && currentNumber[i] != max) {return arr1[i]};
-//     console.log(`Vidurine reiksme: ${arr1[i]}`);
-//     }
+for (let i = 0; i < arr1.length; i++) {
+    const currentNumber = arr1[i];
+    if(currentNumber != min && currentNumber[i] != max) {return arr1[i]};
+    console.log(`Vidurine reiksme: ${arr1[i]}`);
+    }
     // Nesigavo ?????
 
 
@@ -188,7 +189,7 @@ console.log(fullname);
 
 console.log('---------');
 
-// 10 Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų 
+// 9 Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų 
 // raidžių. Stringo ilgis 3 simboliai. Ats://https://www.youtube.com/watch?v=jww3V2fSQyg
 
 createRandomString(3)
