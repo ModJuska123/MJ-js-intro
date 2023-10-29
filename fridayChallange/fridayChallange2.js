@@ -91,11 +91,14 @@ console.log(multiplyByGrade(5, 4));
     // Rezultatą atvaizduokite naršyklėje. 
     console.log('7. -------------');
 
+    // negavau rezultato, dar nesimokem ir neradau internete.
 
     // 8. Parašykite funkciją su dviem parametrais. Pirmasis yra tekstas, įterpiamas į h tagą, o 
     // antrasis tago numeris (1-6). Rašydami šią funkciją remkitės antrame uždavinyje 
     // parašyta funkcija.
     console.log('8. -------------');
+
+     // negavau rezultato, dar nesimokem ir neradau internete
 
     // 9. Aprašykite funkciją kuri priimtų vieną parametrą "number" bei patikrintų ar duotas 
     // skaičius yra pirminis. Atgal grąžinkite teigiamą arba neigiamą (boolean) atsakymą.
