@@ -88,19 +88,26 @@ console.log(multiplyByGrade(5, 4));
 
     
     // 7. Parašykite funkciją, kurios parametras būtų tekstas, kuris yra įterpiamas į h1 tagą. 
-    // Rezultatą atvaizduokite naršyklėje.
-
+    // Rezultatą atvaizduokite naršyklėje. 
     console.log('7. -------------');
 
 
     // 8. Parašykite funkciją su dviem parametrais. Pirmasis yra tekstas, įterpiamas į h tagą, o 
     // antrasis tago numeris (1-6). Rašydami šią funkciją remkitės antrame uždavinyje 
     // parašyta funkcija.
-    // Aprašykite funkciją kuri priimtų vieną parametrą "number" bei patikrintų ar duotas 
+    console.log('8. -------------');
+
+    // 9. Aprašykite funkciją kuri priimtų vieną parametrą "number" bei patikrintų ar duotas 
     // skaičius yra pirminis. Atgal grąžinkite teigiamą arba neigiamą (boolean) atsakymą.
     // https://lt.wikipedia.org/wiki/Pirminis_skai%C4%8Dius
-    // Sugeneruokite 100 elementų masyvą kurio reikšmės atsitiktiniai skaičiai 
-    // nuo 997 iki 15991. 
-    // Pasinaudodami devintoje užduotyje aprašyta funkcija masyve palikite tik 
-    // pirminius skaičius, kurie yra didesni nei 5000;
     
+    console.log('9. -------------');
+
+
+    // 10. Sugeneruokite 100 elementų masyvą kurio reikšmės atsitiktiniai skaičiai 
+    // nuo 997 iki 15991.
+    ('10. -------------');
+    
+    // 11. Pasinaudodami devintoje užduotyje aprašyta funkcija masyve palikite tik 
+    // pirminius skaičius, kurie yra didesni nei 5000;
+    ('11. -------------');
