@@ -46,17 +46,45 @@ console.log(nameSurname('Giedre', 'Giedrutiene'));
     // 4. Parašykite funkciją kuri sugeneruotų 3 random skaičius nuo 0 iki 5 ir atspausdintų konsolėje 
     // vienoje eilutėje atskirtus kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 
+    console.log('4. -------------');
+
+function randomNumbers() {
+    const number1 = Math.floor(Math.random() * (6 - 0) + 0);
+    const number2 = Math.floor(Math.random() * (6 - 0) + 0);
+    const number3 = Math.floor(Math.random() * (6 - 0) + 0);
+    return `${number1}, ${number2}, ${number3}`
+}
+console.log(randomNumbers());
+
+    // 5. Parašykite funkciją kuri priimtų tris parametrus "from" ir "to" ir "limit". Patikrinkite ar 
+    // šie perduodami parametrai yra skaičiai ir pagal juos sugeneruokite masyvą, kurio ilgį nusako 
+    // "limit" parametras, o reikšmės from ir to nurodo atsitiktinį skaičių šiuose rėžiuose.
+
+    console.log('5. -------------');
+
+
+function createRandomArray(from, to, limit){
+    let randomNumbersArray = '';
+    const characters = '0123456789'.slice(from, to+1);
+    for(let i = 0; i < limit; i++) {
+        randomNumbersArray += characters.charAt(Math.floor(Math.random() * characters.length));
+    }   return [randomNumbersArray];
+    }
+    console.log(createRandomArray(0, 9, 50));
+
+    // 6. Sukurkite funkciją kuri pakeltų paduotą skaičių n laipsniu, ir grąžintų reikšmę (perduodami 
+    //     du parametrai: skaičius ir laipsnis)
+
+function multiplyBy(number, ) {
+    return 
+}
 
 
 
 
 
     
-    // Parašykite funkciją kuri priimtų tris parametrus "from" ir "to" ir "limit". Patikrinkite ar 
-    // šie perduodami parametrai yra skaičiai ir pagal juos sugeneruokite masyvą, kurio ilgį nusako 
-    // "limit" parametras, o reikšmės from ir to nurodo atsitiktinį skaičių šiuose rėžiuose.
-    // Sukurkite funkciją kuri pakeltų paduotą skaičių n laipsniu, ir grąžintų reikšmę (perduodami 
-    //     du parametrai: skaičius ir laipsnis)
+    
     // Parašykite funkciją, kurios parametras būtų tekstas, kuris yra įterpiamas į h1 tagą. 
     // Rezultatą atvaizduokite naršyklėje.
     // Parašykite funkciją su dviem parametrais. Pirmasis yra tekstas, įterpiamas į h tagą, o 
