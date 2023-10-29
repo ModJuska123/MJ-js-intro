@@ -320,7 +320,7 @@ function getPlanetName(id){
   }
 
 }
-console.log(getPlanetName(3));
+console.log(getPlanetName(8));
 
 // https://www.codewars.com/kata/515e188a311df01cba000003/solutions/javascript
 
@@ -329,3 +329,40 @@ function getPlanetName(i){
 }
 console.log(getPlanetName(2))
 
+console.log('----------------');
+
+
+function resetLeagueStandings(standings) {
+  // Get the team that finished first last season
+  const firstLastSeason = standings[1];
+
+  // Create an array of team names (excluding the first team)
+  const teamNames = Object.values(standings).slice(1);
+
+  // Sort the team names alphabetically
+  teamNames.sort();
+
+  // Create a new object with the updated standings
+  const PremierLeagueStandings = { 1: firstLastSeason };
+
+  for (let i = 0; i < teamNames.length; i++) {
+    PremierLeagueStandings[i + 2] = teamNames[i];
+  }
+
+  return PremierLeagueStandings;
+}
+
+// Example input
+const previousStandings = {
+  1: 'Leeds United',
+  2: 'Liverpool',
+  3: 'Manchester City',
+  4: 'Coventry',
+  5: 'Arsenal'
+};
+
+// Reset the league standings
+const PremierLeagueStandings = resetLeagueStandings(previousStandings);
+
+// Output the new standings
+console.log(PremierLeagueStandings);
