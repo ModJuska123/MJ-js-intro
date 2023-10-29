@@ -65,29 +65,35 @@ console.log(randomNumbers());
 
 function createRandomArray(from, to, limit){
     let randomNumbersArray = '';
-    const characters = '0123456789'.slice(from, to+1);
+    const characters = '0123456789'.slice(from, to+1); 
     for(let i = 0; i < limit; i++) {
         randomNumbersArray += characters.charAt(Math.floor(Math.random() * characters.length));
     }   return [randomNumbersArray];
     }
-    console.log(createRandomArray(0, 9, 50));
+    console.log(createRandomArray(0, 9, 50)); //patikrinti ar skaicius
 
     // 6. Sukurkite funkciją kuri pakeltų paduotą skaičių n laipsniu, ir grąžintų reikšmę (perduodami 
     //     du parametrai: skaičius ir laipsnis)
 
-function multiplyBy(number, ) {
-    return 
+    console.log('6. -------------');
+
+let finalValue = 0;
+function multiplyByGrade(start, grade) {
+   const valueOfMultiply = start ** grade;
+    return `${start} ** ${grade} value ${valueOfMultiply}.`;
 }
-
-
-
-
+console.log(multiplyByGrade(5, 2));
+console.log(multiplyByGrade(5, 3));
+console.log(multiplyByGrade(5, 4));
 
     
-    
-    // Parašykite funkciją, kurios parametras būtų tekstas, kuris yra įterpiamas į h1 tagą. 
+    // 7. Parašykite funkciją, kurios parametras būtų tekstas, kuris yra įterpiamas į h1 tagą. 
     // Rezultatą atvaizduokite naršyklėje.
-    // Parašykite funkciją su dviem parametrais. Pirmasis yra tekstas, įterpiamas į h tagą, o 
+
+    console.log('7. -------------');
+
+
+    // 8. Parašykite funkciją su dviem parametrais. Pirmasis yra tekstas, įterpiamas į h tagą, o 
     // antrasis tago numeris (1-6). Rašydami šią funkciją remkitės antrame uždavinyje 
     // parašyta funkcija.
     // Aprašykite funkciją kuri priimtų vieną parametrą "number" bei patikrintų ar duotas 
