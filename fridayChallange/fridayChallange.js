@@ -202,3 +202,4 @@ function createRandomString(stringlength){
         console.log(randomString);
     }
 
+    console.log("Labas rytas");

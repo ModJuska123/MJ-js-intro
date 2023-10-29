@@ -7,6 +7,7 @@
     "method:array": "nodemon ./method/array.js",
     "uzd:tarpai": "nodemon ./uzd/tarpai.js",
     "uzd:vardas": "nodemon ./uzd/vardas.js",
+    "fridayChallange2": "nodemon ./fridayChallange/fridayChallange2.js",
     "fridayChallange": "nodemon ./fridayChallange/fridayChallange.js",
     "codeWars": "nodemon ./codeWars/codeWars.js",
     "method:string": "nodemon ./method/string.js",
