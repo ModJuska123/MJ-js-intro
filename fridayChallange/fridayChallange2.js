@@ -101,13 +101,38 @@ console.log(multiplyByGrade(5, 4));
     // skaičius yra pirminis. Atgal grąžinkite teigiamą arba neigiamą (boolean) atsakymą.
     // https://lt.wikipedia.org/wiki/Pirminis_skai%C4%8Dius
     
-    console.log('9. -------------');
-
-
+    console.log('9. -------------'); 
+   
+    let isPrime = true;
+    function primeNumber(number)            //kai number = 1, meta klaida
+    {for (let i = 2; i < number; i++) {if (number == 1 && number % i == 0) {isPrime = false; break} else {isPrime = true}};
+    
+    return isPrime;
+    }
+    console.log(primeNumber(3));
+  
     // 10. Sugeneruokite 100 elementų masyvą kurio reikšmės atsitiktiniai skaičiai 
     // nuo 997 iki 15991.
-    ('10. -------------');
+    console.log('10. -------------');
+
+    function getRandomArray(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;};
+
+        const randomArray = [];
+        
+        for (let i = 0; i < 100; i++) {
+            const randomNumber = getRandomArray(997, 15991);
+            randomArray.push(randomNumber);
+        }
+        console.log(randomArray);
     
     // 11. Pasinaudodami devintoje užduotyje aprašyta funkcija masyve palikite tik 
     // pirminius skaičius, kurie yra didesni nei 5000;
-    ('11. -------------');
+    console.log('11. -------------');
+
+    const arrayNew = [];
+    for (let i = 0; i < 100; i++) {
+        if (randomArray[i] > 5000) {arrayNew.push(randomArray[i])}
+    }
+    console.log(arrayNew);
+   
