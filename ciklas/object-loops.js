@@ -1,3 +1,5 @@
+// Object.keys(...)
+
 const user = {
     name: 'Jonas',
     age: 99,
