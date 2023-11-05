@@ -10,6 +10,7 @@
     "fridayChallange2": "nodemon ./fridayChallange/fridayChallange2.js",
     "fridayChallange": "nodemon ./fridayChallange/fridayChallange.js",
     "codeWars": "nodemon ./codeWars/codeWars.js",
+    "method:array-loops": "nodemon ./method/array-loops.js",
     "method:string": "nodemon ./method/string.js",
     "method:number": "nodemon ./method/number.js",
     "for": "nodemon ./ciklas/for.js",

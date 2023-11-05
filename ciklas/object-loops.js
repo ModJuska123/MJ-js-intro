@@ -20,3 +20,9 @@ for (let i = 0; i < userKeys.length; i++) {
     console.log(value);
 }
 
+// For (...in...)
+
+for (const key in user) {
+    const value = user[key];
+    console.log(key, value);
+}
