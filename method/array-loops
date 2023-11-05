@@ -1,0 +1,7 @@
+// 
+const marks = [20, 4, 16, 8];
+function doubleOrNothing2(number) {
+    return number * 2;
+}
+const doubleMarkMap2 = marks.map(doubleOrNothing2);
+console.log('MAP:', doubleMarkMap2);
