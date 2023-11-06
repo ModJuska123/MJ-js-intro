@@ -20,6 +20,7 @@
     "palyginimas:if": "nodemon ./palyginimas/if.js",
     "palyginimas:ternary": "nodemon ./palyginimas/ternary.js",
 "function": "nodemon ./kintamieji/function.js",
+"destruct": "nodemon ./kintamieji/destruct.js",
     "array": "nodemon ./kintamieji/array.js",
 "object": "nodemon ./kintamieji/object.js",
 "boolean": "nodemon ./kintamieji/boolean.js",
