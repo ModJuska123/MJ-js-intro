@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "function:class": "nodemon ./function/class.js",
     "function:arrow": "nodemon ./function/arrow.js",
     "method:array": "nodemon ./method/array.js",
     "uzd:tarpai": "nodemon ./uzd/tarpai.js",
