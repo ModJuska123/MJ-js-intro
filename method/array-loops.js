@@ -59,7 +59,7 @@ console.log(stringList)
 marks.sort((a, b)=>a-b);
 console.log(marks);
 
-// darbas us masyvais ir objektais juose:
+// .sort - darbas us masyvais ir objektais juose:
 // 1. surikiuoju visus pagal amziu
 console.log('darbas us masyvais ir objektais juose---------');
 const family = [
@@ -104,3 +104,42 @@ function redFunc(total, number) {
 }
 const reduceSuma = pazymiai.reduce(redFunc);
 console.log(reduceSuma);
+
+
+// ".sort" - uzdavinys su objektais
+console.log('".sort" - uzdavinys su objektais---------');
+const students = [
+{
+    name: 'Maryte', 
+    marks: [88, 'asd', 10, 2],
+},
+{
+    name: 'Jonas', 
+    marks: [1, 'asd', 'm'],
+},
+{
+    name: 'Ona', 
+    marks: [8, 8, 'asd', 10,1, 2]
+},
+{
+    name: 'Petras', 
+    marks: [8, 7, 10, 2],
+},
+]
+
+const teacher = students
+
+.map(student => ({
+name: student.name,
+marks: student.marks
+    .filter(n => Number.isInteger(n) && n > 0 && n < 11)
+}))
+.map(student => ({
+    name: student.name,
+    average: student.marks.reduce((t, n) => t + n, 0) / student.marks.length || -1,
+}))
+.sort((s1, s2) => s1.average - s2.average)
+.map(student => `${student.name}: ${student.average === -1? `Neturi pazymiu`: student.average};`)
+.join('\n');
+
+console.log(teacher);
