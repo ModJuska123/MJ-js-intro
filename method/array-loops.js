@@ -47,21 +47,60 @@ const goodMarksOnly4 = badMarks
     .filter(n => Number.isInteger(n) && isFinite(n) && n > 0 && n < 11 && Number.isInteger(n))
 console.log(goodMarksOnly4);
 
+// darbas su stringais
+// .sort(...) mutuoja esama masyva
 
+const stringList = ['a', 'B', 'A', 'b', 'C', 'd', 'c', 'ab', 'AB', 'Labas'];
+console.log(stringList);
 
+stringList.sort();
+console.log(stringList)
 
+marks.sort((a, b)=>a-b);
+console.log(marks);
 
+// darbas us masyvais ir objektais juose:
+// 1. surikiuoju visus pagal amziu
+console.log('darbas us masyvais ir objektais juose---------');
+const family = [
+    {name: 'Maryte', age: 99}, 
+    {name: 'Jonas', age: 100}, 
+    {name: 'Ona', age: 20}, 
+    {name: 'Petras', age: 88}, 
+    {name: 'Maryte', age: 87}, 
+    {name: 'Maryte', age: 60}, 
+];
 
+family.sort((a, b) => a.age - b.age);
+console.log(family);
 
+// 2. istraukiu pagal amziu vardus
+const names = [];
 
+for (const user of family) {
+    names.push(user.name)
+}
+console.log(names);
 
-// .map() metodas grazina nauja masyva per funkcija
+// 3. iskeliu is masyvo i stringa
 
-// const marks1 = [10, 2, 8, 5];
+const familyString = names.join(',') + '.';
+console.log(familyString);
 
-// const doubleMarkMap4 = marks1.map(n => n * 2);
+// pazymiu suma
+const pazymiai = [10, 2, 8, 4, 3];
 
-// console.log(doubleMarkMap4);
-// console.log('labas');
+let pazymiuSuma = 0;
 
+for (pazymys of pazymiai) {
+    pazymiuSuma =+pazymys;
+}
+const vidurkis = pazymiuSuma / pazymiai.length;
 
+console.log(vidurkis);
+
+function redFunc(total, number) {
+    return total + number;
+}
+const reduceSuma = pazymiai.reduce(redFunc);
+console.log(reduceSuma);
