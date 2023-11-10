@@ -42,13 +42,13 @@ class Hamster extends Pet {
 }
 
 const rex = new Dog('Rex', 'juodos');
-console.log(rex.sayHi());
-console.log(rex.repeatTwice());
-console.log(rex.setColor('black'));
-console.log(rex.sayHi());
+// console.log(rex.sayHi());
+// console.log(rex.repeatTwice());
+// console.log(rex.setColor('black'));
+// console.log(rex.sayHi());
 
 const garfildas = new Cat('Garfildas', 'oranzines');
-console.log(garfildas.sayHi());
+// console.log(garfildas.sayHi());
 
 const tom = new Hamster('Tom', 'juodos');
 console.log(tom.sayHi());
