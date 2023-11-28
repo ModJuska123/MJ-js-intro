@@ -386,10 +386,19 @@ console.log('------------------');
 // positive numbers, and will never be empty or null.
 //https://www.codewars.com/kata/57f6ad55cca6e045d2000627/train/javascript
 
-// const array = [4, 8];
+// const array = [4, 3];
+// let square = [];
 // function squareOrSquareRoot(array) {
-//     return array Math.sqrt();  
-   
-//   }
-//   console.log(array); NEBAIGIAU
+//   for (let i = 0; i < array.length; i++) {
+//     square = square + array[i];
+//     return square;
+//     }
+//     }
+//   console.log(square);
   
+const array = [4, 3];
+let square = [];
+for (let i = 0; i < array.length; i++) {
+if(Name.isInteger(Math.sqrt(array[i]))) {square.push(Math.sqrt(array[i]))}
+}
+console.log(square);
