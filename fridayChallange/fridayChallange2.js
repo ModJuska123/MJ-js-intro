@@ -112,7 +112,7 @@ console.log(multiplyByGrade(5, 4));
     
     return isPrime;
     }
-    console.log(primeNumber(2));
+    console.log(primeNumber(100));
   
     // 10. Sugeneruokite 100 elementų masyvą kurio reikšmės atsitiktiniai skaičiai 
     // nuo 997 iki 15991.
