@@ -396,9 +396,42 @@ console.log('------------------');
 //     }
 //   console.log(square);
   
-const array = [4, 3];
-let square = [];
-for (let i = 0; i < array.length; i++) {
-if(Name.isInteger(Math.sqrt(array[i]))) {square.push(Math.sqrt(array[i]))}
+console.clear();
+
+// Task str to num: 
+// https://www.codewars.com/kata/544675c6f971f7399a000e79/solutions/javascript
+//S1:
+var stringToNumber = function(str){
+return Number(str);
 }
-console.log(square);
+console.log(stringToNumber('123'));
+
+//S2:
+var stringToNumber = function(str){
+  return parseInt(str);
+} 
+console.log(stringToNumber('321'));
+
+//S3:
+stringToNumber=s=>+s
+console.log(stringToNumber('441'));
+
+//S4:
+let stringToNumber1 = function(str) {
+  return parseInt(str)
+}
+console.log(stringToNumber1('553'));
+
+// true fals is strin a number
+//https://www.codewars.com/kata/57126304cdbf63c6770012bd/train/javascript
+
+const s = '12.1 1       12';
+function isDigit(s) {
+  return Number.isInteger(parseInt(s))
+}
+console.log(s);
+console.log(isDigit(s));
+
+const isInt = (s) => parseInt(s) % 1 === 0? true : false;
+
+
