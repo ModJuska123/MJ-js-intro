@@ -508,3 +508,47 @@ function past(h, m, s){
 const paperwork = (n, m) => n > 0 && m > 0 ? n * m : 0; 
  console.log(paperwork (-1, 20));
 
+//century year
+let arr = [2, 0, -2];
+function invertValue(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) {
+      result.push(arr[i]);
+    } else {
+      result.push(arr[i] * -1);
+    }
+  }
+  return result;
+}
+console.log(invertValue(arr));
+
+
+// Name to initials
+let name = "Pe";
+let surn = "per";
+function abbrevName(name, surn) {
+  let x = name.charAt(0).toUpperCase();
+  let y = surn.charAt(0).toUpperCase();
+  return x + '.' + y;
+}
+console.log(abbrevName(name, surn));
+
+function convertToInitials(name) {
+  const words = name.split(' ');
+  console.log(words);
+  if (words.length !== 2) {
+    return "Invalid input. Please provide exactly two words separated by a space.";
+  }
+  const initials = words.map(word => word.charAt(0).toUpperCase());
+  const result = initials.join('.');
+  return result;
+}
+console.log(convertToInitials("mo Mol"));
+
+function abbrevName(name){
+  return name[0].toUpperCase() + "." + name[name.indexOf(" ")+1].toUpperCase();}
+
+  function abbrevName(name){
+    return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
+  }
