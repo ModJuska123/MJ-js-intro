@@ -434,4 +434,77 @@ console.log(isDigit(s));
 
 const isInt = (s) => parseInt(s) % 1 === 0? true : false;
 
+//multiply 
+
+const multiply = (a, b) => a * b;
+
+//return oposite
+
+const opposite = number => -number;
+console.log(opposite (-10));
+
+//oposite
+function oposite(s) {
+  return s.split("").reverse().join("");
+}
+  
+  console.log(oposite("saule"));
+
+// bool to word
+function boolToWord( bool ){
+  if(bool == true) {return 'Yes'} if (bool == false) {return 'No'}
+  }
+  console.log(boolToWord(false));
+
+  //return summ of positive
+
+  const str122 = (x) => x.split(' ').join('');
+  console.log(str122("hs ss       gf  "));
+
+
+  function booleanToString(b){
+    if(b==true){return String('true')} if(b!==true){return String('false')}
+  }
+  console.log(booleanToString(false));
+
+  // mathematics+-*/
+
+  function basicMathOperations(operator, value1, value2) {
+    switch (operator) {
+      case '+':
+        return value1 + value2;
+      case '-':
+        return value1 - value2;
+      case '*':
+        return value1 * value2;
+      case '/':
+        // Check for division by zero
+        if (value2 !== 0) {
+          return value1 / value2;
+        } else {
+          return "Cannot divide by zero";
+        }
+      default:
+        return "Invalid operator";
+    }
+  }
+  console.log(basicMathOperations('+', 12, 12));
+
+  //hrs to miliseconsd
+function past(h, m, s) {
+  const convertHours = h * 60 * 60 * 1000;
+  const convertMinutes = m * 60 * 1000;
+  const convertSeconds = s * 1000;
+  return convertHours + convertMinutes + convertSeconds;
+}
+console.log(past(2, 30, 30));
+
+function past(h, m, s){
+  return s*1000 + m*60000 + h*3600000
+ }
+ console.log(past(2, 30, 30));
+
+ //classmades + paper
+const paperwork = (n, m) => n > 0 && m > 0 ? n * m : 0; 
+ console.log(paperwork (-1, 20));
 
