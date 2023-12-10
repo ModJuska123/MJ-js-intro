@@ -458,6 +458,11 @@ function boolToWord( bool ){
 
   //return summ of positive
 
+//   sum = positiveSum.reduce(function (r, a) {
+//     return a > 0 ? r + a : r;
+// }, 0);
+
+
   const str122 = (x) => x.split(' ').join('');
   console.log(str122("hs ss       gf  "));
 
@@ -491,7 +496,7 @@ function boolToWord( bool ){
   console.log(basicMathOperations('+', 12, 12));
 
   //hrs to miliseconsd
-function past(h, m, s) {
+  function past(h, m, s) {
   const convertHours = h * 60 * 60 * 1000;
   const convertMinutes = m * 60 * 1000;
   const convertSeconds = s * 1000;
@@ -552,3 +557,52 @@ function abbrevName(name){
   function abbrevName(name){
     return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
   }
+
+  function greet() {
+    const hello = "hello";
+    const world = "world";
+    const punctuation = "!";
+  
+    return `${hello} ${world}${punctuation}`;
+  }
+  
+console.log(greet());
+
+//sum array
+// Sum Numbers
+
+// let sum22 = [12, 12, 5];
+// let counter22 = 0;
+// sum22.forEach(num22 => isNumeric(num22) ? counter22++ : 0);
+// console.log(counter22);
+
+//square n sum
+const numb = [10, 2, 2];
+function squareSum(numb){
+  let resultSq = 0;
+  numb.forEach((item) => {resultSq += item * item});
+  return resultSq;
+}
+console.log(squareSum(numb));
+
+function squareSum(numbers){
+  return numbers.reduce((sum,num) => sum + (num * num), 0);
+}
+
+// smalest arr integ
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    
+  }
+}
+
+//counting sheeps
+const sheeps = [true, false];
+function countSheeps(sheeps) {
+  let nummerOfSheeps = 0;
+  for (const sheep of sheeps) {(sheep) => {sheep == true ? nummerOfSheeps++ : 0}; 
+  } 
+  return nummerOfSheeps;
+}
+ console.log(countSheeps);
