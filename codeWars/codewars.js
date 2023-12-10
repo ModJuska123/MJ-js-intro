@@ -598,11 +598,64 @@ class SmallestIntegerFinder {
 }
 
 //counting sheeps
-const sheeps = [true, false];
+const sheeps = [true, false, true, true,true,true,true,true,true,true,true,true, Infinity];
 function countSheeps(sheeps) {
   let nummerOfSheeps = 0;
-  for (const sheep of sheeps) {(sheep) => {sheep == true ? nummerOfSheeps++ : 0}; 
-  } 
+  sheeps.forEach((sheep) => {sheep == true ? nummerOfSheeps++ : null}); 
   return nummerOfSheeps;
 }
- console.log(countSheeps);
+ console.log(countSheeps(sheeps));
+
+ function countSheeps(sheeps) {
+  return sheeps.filter(Boolean);
+}
+console.log(countSheeps(sheeps));
+
+function countSheeps(sheeps) {
+  var array = sheeps.reduce((a,b)=>a + (b===true?1:0),0)
+  return array;
+}
+console.log(countSheeps(sheeps));
+
+//hydrated
+const time = 3;
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+console.log(litres(time));
+
+// beginer-lost
+
+const arrValue = [1, 2, 3];
+function maps(arrValue) {
+  let mapsDoubled = [];
+  arrValue.forEach((arrNu) => {mapsDoubled.push(arrNu * 2)})
+return mapsDoubled;
+}
+
+console.log(maps(arrValue));
+
+// function maps(x){
+//   return x.map(n => n * 2);
+// };
+
+// const maps=x=>x.map(x=>x+x);
+
+// convert num
+
+function digitize(number22) {
+  return String(number22).split('').reverse().map(Number);
+}
+console.log(digitize(987654321));
+
+// oposite attract
+
+  function lovefunc(flower1, flower2) {
+    return flower1 % 2 !== flower2 % 2;
+  }
+  console.log(lovefunc(2, 4));
+
+  //multiply ecen
+  function simpleMultiplication(number) {
+    // your code........
+}
