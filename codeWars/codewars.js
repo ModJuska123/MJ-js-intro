@@ -656,6 +656,148 @@ console.log(digitize(987654321));
   console.log(lovefunc(2, 4));
 
   //multiply ecen
-  function simpleMultiplication(number) {
-    // your code........
+  function simpleMultiplication(number33) {
+    let result = 0;
+    if(number33 % 2 == 0) {
+      result = number33 * 8} if (number33 % 2 !== 0) {
+        result = number33 * 9}
+    return result;
 }
+console.log(simpleMultiplication(1));
+
+//find a needle
+const haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"];
+function findNeedle(haystack) {
+const found = haystack.indexOf("needle");
+return `found the needle at position ${found}`;
+}
+console.log(findNeedle(haystack));
+
+// average
+
+const array44 = [1,2,3];
+function findAverage(array44) {
+  let total = 0;
+  let average = 0;
+  if (array44.length === 0) {
+    return 0;
+  } else {
+    for (let i = 0; i < array44.length; i++) {
+      total += array44[i]
+    }
+    average = total / array44.length
+    return average;
+  }
+}
+console.log(findAverage(array44));
+
+// function find_average(arr) {
+//   return arr.length > 0? arr.reduce((a, b) => a + b) / arr.length : 0;
+// }
+
+// function find_average(array) {
+//   return array.length ? array.reduce((a, b) => a + b) / array.length : 0;
+// }
+
+// survive
+function hero(bullets, dragons){
+ if(bullets >= dragons * 2) {
+  return true} else {
+    return false;}
+  }
+  console.log( hero(4, 2));
+
+  // coun sum
+  const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+  // function countPositivesSumNegatives(input) {
+  //   let sumOfNegatives = 0;
+  //   let countOfPositives = 0;
+  //   let result33 = [];
+  //   input.reduce((a, b) => b > 0 ? countOfPositives++ : sumOfNegatives += a + b);
+  //   result33 = result33.push(countOfPositives, sumOfNegatives);
+  // }
+
+  function countPositivesSumNegatives(input) {
+    let pos = []
+    let neg = []
+    if (input === null || !input.length) return []
+    else {
+        input.map(num => {
+            return num > 0 ? pos.push(num) : neg.push(num)
+        })
+    }
+    let out1 = pos.length
+    let out2 = neg.reduce((a, c) => a + c, 0)
+    return [out1, out2]
+  }
+
+  console.log(countPositivesSumNegatives(input));
+
+  // grow
+  const x = [100, 2, 1, 1];
+  const grow=x=> x.reduce((a,b) => a*b);
+  console.log(grow(x));
+  
+  // function grow(x){
+    // return x.reduce((a, b)=> a * b,1);
+    // }
+
+    // let element11 = [0];
+    // function grow(x) {
+    //   for (let i = 0; i < x.length; i++) {
+    //     element11 = element11 * x[i];
+    //   }
+    //   return element11;
+    //   }
+    //   console.log(grow(x));
+
+
+    // const grow=x=>eval(x.join("*"))
+
+    //realy
+    const classPoints = [9, 8, 10];
+    const yourPoints = 10;
+    function betterThanAverage(classPoints, yourPoints) {
+      const averageOfClassPoints = classPoints.reduce((a, b) => a + b) / classPoints.length;
+      if (averageOfClassPoints < yourPoints) {
+    return true} else {
+      return false
+    };
+    }
+    console.log(betterThanAverage(classPoints, yourPoints));
+    
+    // function betterThanAverage(classPoints, yourPoints) {
+    //   return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+    // }
+
+    //BMI
+    function bmi(weight, height) {
+      const bmiCalaculation = weight / (height * height);
+      if(bmiCalaculation <= 18.5) {return  "Underweight"
+    } if(bmiCalaculation <= 25) {
+        return "Normal"
+      } if(bmiCalaculation <= 30) {
+          return "Overweight"
+        } if(bmiCalaculation > 30) {
+          return "Obese"};
+    }
+    console.log(bmi(94, 1.78));
+
+    // const bmi = (w, h, bmi = w/h/h) =>  bmi <= 18.5 ? "Underweight" :
+    //                                 bmi <= 25 ? "Normal" :
+    //                                 bmi <= 30 ? "Overweight" : "Obese";
+
+    // function bmi(weight, height) {
+    //   var bmi  = weight/(height*height);  
+    //    return bmi < 18.5 ? "Underweight" : bmi <=25 ? "Normal" : bmi <= 30 ? "Overweight" : "Obese";
+    //   }
+
+    // bmi = (w, h) => (w = w / h / h) > 30 ? 'Obese' : w > 25 ? 'Overweight' : w > 18.5 ? 'Normal' : 'Underweight';
+
+    
+
+
+
+
+
+
