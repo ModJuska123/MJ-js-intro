@@ -794,10 +794,27 @@ function hero(bullets, dragons){
 
     // bmi = (w, h) => (w = w / h / h) > 30 ? 'Obese' : w > 25 ? 'Overweight' : w > 18.5 ? 'Normal' : 'Underweight';
 
+    // fake bin
     
+const str22 = '262355677834342';
+const convert = (str22 = '') => {
+   let res = '';
+   for(let i = 0; i < str22.length; i++){
+      const el = +str22[i];
+      if(el < 5){
+         res += 0;
+      }else{
+         res += 1;
+      };
+   };
+   return res;
+};
+console.log(convert(str22));
 
+function fakeBin(xmm) {
+  return xmm.split('').map(n => n < 5 ? 0 : 1).join('');
+}
+console.log(convert('262355677834342'));
 
-
-
-
+// fakeBin=x=>[...x].map(a=>+a<5?0:1).join('');
 
