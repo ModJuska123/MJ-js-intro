@@ -818,3 +818,202 @@ console.log(convert('262355677834342'));
 
 // fakeBin=x=>[...x].map(a=>+a<5?0:1).join('');
 
+// Smash
+
+const words44 = ["djshgs", "kjgfhsak"];
+function smash(words44) {
+  return words44.join(" ").trim();
+}
+console.log(smash (words44));
+
+// const smash = words => words.join(' ');
+
+const s4 = 25
+function cockroachSpeed(s) {
+  return Math.floor(s4 * 1000 / 3600);
+
+}
+console.log(cockroachSpeed(s));
+
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown(n - 1);
+    arr.unshift(n);
+    return arr;
+  }
+}
+console.log(countdown(5));
+
+// 6 lygio pav
+
+function proofread(str) {
+
+  const sentences = str.split(/(?<=\.|\?|\!)\s+/);
+
+  const fixedSentences = sentences.map((sentence) => {
+ 
+    sentence = sentence.charAt(0).toUpperCase() + sentence.slice(1).toLowerCase();
+
+    sentence = sentence.replace(/\b(\w*?)ei(\w*?)\b/gi, (match, p1, p2) => p1 + 'ie' + p2);
+
+    return sentence;
+  });
+
+  const result = fixedSentences.join(' ');
+
+  return result;
+}
+
+const fixedText = proofread ("ShE deCIeved HiM.");
+
+console.log(fixedText);
+
+// 6 n-tas dublis 
+
+function decode(str) {
+  if (typeof str !== 'string') {
+    return 'Input is not a string';
+  }
+
+  const decode = str
+    .split('')
+    .map(char => {
+      if (/[a-z]/.test(char)) {
+        const code = char.charCodeAt(0);
+        const decodedChar = String.fromCharCode(code - 1);
+        return decodedChar;
+      } else {
+        return char;
+      }
+    })
+    .join('');
+
+  return decode;
+}
+
+const drunkFriendsMessage = "yvvi";
+const decodedMessage = decode(drunkFriendsMessage);
+console.log(decode(str)); // Output: "beer"
+
+
+// tercias dublis
+
+function likes(names) {
+  if (names.length === 0) {
+    return "no one names this";
+  } else if (names.length === 1) {
+    return `${names[0]} names this`;
+  } else if (names.length === 2) {
+    return `${names[0]} and ${names[1]} like this`;
+  } else {
+    const othersCount = names.length - 2;
+    return `${names[0]}, ${names[1]} and ${othersCount} others like this`;
+  }
+}
+
+// Examples
+console.log(likes([])); // Output: "no one likes this"
+console.log(likes(["Peter"])); // Output: "Peter likes this"
+console.log(likes(["Jacob", "Alex"])); // Output: "Jacob and Alex like this"
+console.log(likes(["Max", "John", "Mark"])); // Output: "Max, John and Mark like this"
+console.log(likes(["Alex", "Jacob", "Mark", "Max"])); // Output: "Alex, Jacob and 2 others like this"
+
+// max, min
+
+var min44 = function(list){
+    
+  return list.reduce((a, b) => Math.min(a, b));
+}
+
+var max44 = function(list){
+  
+  return list.reduce((a, b) => Math.max(a, b), -Infinity);
+}
+
+console.log(min44([1, 2, 20, 3, 0]));
+console.log(max44([1, 2, 3, 0, 100]));
+
+
+// V2
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
+
+// // V3 
+// const min = list => list.sort((a, b) => a - b)[0];
+
+// const max = list => list.sort((a, b) => b - a)[0];
+
+
+//divisible by...
+
+// function isDivisible(n, x, y) {
+
+//   return bool = () => (n % x === 0) && (n % y === 0) ? 'true' : 'false';
+// }
+// console.log(isDivisible(10, 2, 5));
+
+const isDivisible = (n, x, y) => n % x === 0 && n % y === 0 ? 'true' : 'false';
+
+console.log(isDivisible(10, 3, 2));
+
+// count by X
+
+function countBy(x, n) {
+  let z = [];
+  const s = x * n;
+  for (let i = x; i <= s; i++) {
+    z = z.push([i]);
+  }
+
+  return z;
+}
+console.log(countBy(1, 10));
+
+function countBy(x, n) {
+  var z = [];
+  for (var i = 1; i <= n; i++) {
+    z.push(x * i);
+  }
+  return z;
+}
+console.log(countBy(1, 10));
+
+
+// arr vidurkis
+
+function sumArrayValues(arr) {
+  
+  const sum = arr.reduce((acc, val) => acc + (+val || 0), 0);
+
+  return sum;
+}
+
+// Example usage:
+
+const x44 = [2, '21', 19];
+
+
+// var sum = 0;
+// for(let i = 0; i < arr44.length; i++) {
+//   if (typeof arr44[i] !== 'string') {
+//     sum += Number(arr44[i])
+//   } else {
+//     sum += 0
+//   }
+// }
+// console.log(sum);
+
+function sumMix(x44){
+  var sum = 0;
+  for(let i = 0; i < x44.length; i++) {
+    if (typeof x44[i] == 'string') {
+      sum += Number(x44[i])
+    } else {
+      sum += x44[i]
+    }
+  }
+    return sum;
+  }
+  console.log(sumMix(x44));
