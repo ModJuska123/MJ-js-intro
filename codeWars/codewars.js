@@ -781,7 +781,7 @@ function hero(bullets, dragons){
         } if(bmiCalaculation > 30) {
           return "Obese"};
     }
-    console.log(bmi(94, 1.78));
+    console.log(bmi(15, 1.78));
 
     // const bmi = (w, h, bmi = w/h/h) =>  bmi <= 18.5 ? "Underweight" :
     //                                 bmi <= 25 ? "Normal" :
@@ -1017,3 +1017,172 @@ function sumMix(x44){
     return sum;
   }
   console.log(sumMix(x44));
+
+  //BMI
+  function bmi(weight, height) {
+    const bmiCalaculation = weight / (height * height);
+    if(bmiCalaculation <= 18.5) {return  "Underweight"
+  } if(bmiCalaculation <= 25) {
+      return "Normal"
+    } if(bmiCalaculation <= 30) {
+        return "Overweight"
+      } if(bmiCalaculation > 30) {
+        return "Obese"};
+  }
+  console.log(bmi(15, 1.78));
+
+//can't sleep
+
+var countSheep = function (num){
+  let str = "";
+   for(let i = 1; i <= num; i++) { 
+     str+= `${i} sheep...`; 
+   }
+   console.log(str);
+ };
+ countSheep(2);
+
+//  secret message
+
+function greet(name){
+  if(name != "Johnny") {return "Hello, " + name + "!"} 
+  else {return "Hello, my love!"};
+}
+console.log(greet("Jonny"));
+
+function greet(name){  
+  if(name === "Johnny")
+    return "Hello, my love!";
+  return "Hello, " + name + "!";
+}
+console.log(greet("Jonny"));
+
+// quareter of the year
+
+const quarterOf = (month) => {
+  if (month <= 3) {return "first quareter"}
+  if (month <= 6) {return "second quareter"}
+  if (month <= 9) {return "third quareter"}
+  else {return "forth quareter"}
+  
+  }
+console.log(quarterOf(5));
+// 
+const quarterOf2 = (month) => {
+  return month < 4 ? 1 : 
+  month < 7 ? 2 : 
+  month < 10 ? 3 : 
+  4;  
+}
+console.log(quarterOf2(5));
+
+// Message
+
+function greet (name, owner) {
+  if (name != owner) return "Hello guest";
+  return "Hello boss";
+}
+console.log(greet ("Pamela", "Chuck"));
+
+// 
+
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 	'Hello guest';
+} 
+console.log(greet ("Pamela", "Pamela"));
+
+// Rock. paper, scisors
+
+const rps = (p1, p2) => {
+  if (p1 === "scissors" && p2 === "paper") {
+  return "Player 1 won!"}
+  if (p2 === "scissors" && p1 === "paper") {
+  return "Player 2 won!"}
+  if (p1 === "paper" && p2 === "rock") {
+    return "Player 1 won!"}
+  if (p2 === "paper" && p1 === "rock") {
+    return "Player 2 won!"}
+  if (p1 === "rock" && p2 === "scissors") {
+      return "Player 1 won!"}
+  if (p2 === "rock" && p1 === "scissors") {
+      return "Player 2 won!"}
+  if (p1 === p2) return "Draw";
+};
+console.log(rps("paper", "scissors"));
+console.log(rps("rock", "rock"));
+
+//sum posit
+
+function SummPositive( numbers ) {
+  var sum = 0;
+
+  for(var i = 0; i < numbers.length; i++) {
+    if(numbers[i] > 0) {
+      sum += numbers[i];
+    }
+  }
+  return sum;
+}
+var sum_result = SummPositive( [ 1, 2, 3, 4, 5, -2, 23, -1, -13, 10,-52 ] );
+
+console.log(sum_result);
+
+// smalest int
+
+function solution(A) {
+  let newArr = A.sort((a, b) => a - b );
+  for (let i = 0; i <= A.length; i++){
+
+    if (newArr[i] > 0 ) {
+    	return newArr[i];
+    }
+   };
+}
+console.log(solution([-1, 10, 3, 11, -1]));
+
+// car rent
+
+function rentalCarCost(d) {
+  const totalPrice = d * 40;
+  if(d >= 7) {return totalPrice - 50} 
+  if(d >= 3) {return totalPrice - 20} 
+  else return totalPrice;
+}
+console.log(rentalCarCost(7));
+
+// exclamation mark
+
+function removeExclamationMarks(s) {
+  return s.replaceAll("!", "");
+}
+console.log(removeExclamationMarks("Hello!!!!!"));
+
+// third angle
+
+function otherAngle(a, b) {
+  return 180 - a - b;
+}
+
+console.log(otherAngle(30, 120));
+
+// trafic light
+
+  function updateLight(current) {
+    let lights = ["green", "yellow", "red"];
+    let currentIndex = lights.indexOf(current);
+    return (currentIndex == lights.length - 1) ? lights[0] : lights[currentIndex + 1]
+  }
+  console.log(updateLight("red"));
+  //
+
+  function updateLight(current) {
+      return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+  }
+  console.log(updateLight('yellow'));
+
+  // Perimeter
+
+  const areaOrPerimeter = function(l , w) {
+    return l !== w ? (l + w) * 2 : l * w;
+  };
+  console.log(areaOrPerimeter (6, 6));
