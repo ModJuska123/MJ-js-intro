@@ -1186,3 +1186,101 @@ console.log(otherAngle(30, 120));
     return l !== w ? (l + w) * 2 : l * w;
   };
   console.log(areaOrPerimeter (6, 6));
+
+  // Set alarm
+
+  function setAlarm(employed, vacation){
+    return employed === true && vacation === true ? false : 
+    employed === false && vacation === true ? false : 
+    employed === false && vacation === false ? false : true;
+  } 
+  console.log(setAlarm(true, false));
+
+  // Messi
+
+  function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  }
+  console.log(goals (5, 10, 2));
+
+  // Reverse words
+
+  function reverseWords(str){
+    return str.split(' ').reverse().join(" ");
+  }
+
+  console.log(reverseWords("The greatest victory is that which requires no battle"));
+
+  // mean of array
+
+  function getAverage(marks5){
+    let marksSum = 0;
+    for (let i = 0; i < marks5.length; i++) {
+      marksSum += marks5[i];
+    }
+    marksAve = marksSum /marks5.length;
+  
+    return Math.round(marksAve);
+  }
+  console.log(getAverage([3, 4]));
+
+  // -------------------------------------
+
+  function getAverage(marks){
+    return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+  }
+  console.log(getAverage([3, 4]));
+
+  // Sum without highes/lowest numbers
+
+
+function sumArray(array) {
+  if (array == null)
+  {
+      return 0;
+  }
+  else if (array.length < 2)
+  {
+      return 0;
+  }
+  else
+  {
+      array = array.sort(function(a,b) {return a - b;});
+      var total = 0;
+      for (var i = 1; i < array.length - 1; i++) {
+          total += array[i];
+      }
+      return total;
+  }
+}
+console.log(sumArray([1, 3, 10]))
+// 
+function sumArray(array) {
+  array = array || [];
+  return array
+    .sort((a, b) => a - b)
+    .slice(1, -1)
+    .reduce((a, b) => a + b, 0);
+}
+console.log(sumArray([1, 3, 10]))
+
+// Double
+
+function doubleChar(str) {
+    return [...str]
+    .map(s => s
+      .repeat(2))
+      .join('')
+    }
+    
+    console.log(doubleChar("String"))
+    console.log(doubleChar("Hello World"))
+    console.log(doubleChar("1234!_ "))
+
+    // The feast
+
+    function feast(beast, dish) {
+      return beast.slice(0, 1) === dish.slice(0, 1) 
+      && beast.slice(-1) === dish.slice(-1) ? true : false;
+      }
+      console.log(feast("bee", "baetroot"))
