@@ -1284,3 +1284,8 @@ function doubleChar(str) {
       && beast.slice(-1) === dish.slice(-1) ? true : false;
       }
       console.log(feast("bee", "baetroot"))
+
+      const arr111 = [5, 4, 3, 2, 1];
+      arr.forEach((x,y) => {
+          console.log(y)
+      });
