@@ -1289,3 +1289,57 @@ function doubleChar(str) {
       arr.forEach((x,y) => {
           console.log(y)
       });
+
+  //testu BIT patikrinimas #29
+
+  let x5=5;
+  let suma5=0;
+  if(x5==0)suma5+=5;
+      suma5+=2;
+console.log(suma5);
+
+  //testu BIT patikrinimas #30
+
+  let keitiklis=5;
+  let dienu=0;
+  switch(keitiklis){
+    case 1: 
+    dienu+=1;
+    case 2: 
+    dienu+=2;
+    case 3: 
+    dienu+=3;
+    case 4: 
+    dienu+=4;
+    case 5: 
+    dienu+=5;
+    case 6: 
+    dienu+=6;
+    case 7: 
+    dienu+=7;
+  }
+  console.log(dienu)
+
+    //testu BIT patikrinimas #35
+
+    let x6=1;
+    let y6=2;
+    let z6=+x6+y6;
+    
+    console.log("Atsakymas:" +x6+y6);
+    console.log("Atsakymas:"+   String(z6));
+
+    //debug
+
+    function sayHello(name) {
+      return `Hello ${name}`
+    }
+    console.log(sayHello('Mr. Spark'));
+
+    //random
+
+    const inputString = "years old";
+    function getAge(inputString){
+      return `${Number(Math.floor(Math.random() * 9))} ${inputString}`
+      }
+      console.log(getAge(inputString));
