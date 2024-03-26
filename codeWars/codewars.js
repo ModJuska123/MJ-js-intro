@@ -1436,47 +1436,77 @@ console.log(getAge(inputString));
 
 const result = switchItUp(0);
 function switchItUp(n) {
-  switch(n) {
-    case 0 : return "zero";
-    break;
-    case 1 : return "one";
+  switch (n) {
+    case 0:
+      return "zero";
       break;
-    case 2 : return "two";
+    case 1:
+      return "one";
       break;
-    case 3 : return "three";
+    case 2:
+      return "two";
       break;
-    case 4 : return "four";
+    case 3:
+      return "three";
       break;
-    case 5 : return "five";
+    case 4:
+      return "four";
       break;
-    case 6 : return "six";
+    case 5:
+      return "five";
       break;
-    case 7 : return "seven";
+    case 6:
+      return "six";
       break;
-    case 8 : return "eight";
+    case 7:
+      return "seven";
       break;
-    case 9 : return "nine";
+    case 8:
+      return "eight";
+      break;
+    case 9:
+      return "nine";
       break;
   }
 }
 console.log(result);
 
-
 // kitas pav
-function switchItUp(n){
-  return ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][n]
+function switchItUp(n) {
+  return [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+  ][n];
 }
 
-function switchItUp(number){
-  var words = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+function switchItUp(number) {
+  var words = [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+  ];
   return words[number];
 }
 
 // squre function
 
-
 function square(n) {
-  return n*n;
+  return n * n;
 }
 
 console.log(square(5));
@@ -1485,8 +1515,40 @@ console.log(square(5));
 const square33 = (n) => n * n;
 
 // hoop
-function hoopCount (n) {
-  if (n >= 10) {return "Great, now move on to tricks."};
-  if (n < 10) {return "Keep at it until you get it."};
+function hoopCount(n) {
+  if (n >= 10) {
+    return "Great, now move on to tricks.";
+  }
+  if (n < 10) {
+    return "Keep at it until you get it.";
+  }
 }
-console.log(hoopCount (10));
+console.log(hoopCount(10));
+
+// twice as old
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - sonYearsOld * 2);
+}
+
+console.log(twiceAsOld(65, 37));
+
+//remove element
+
+function removeEveryOther(arr55) {
+  let result = [];
+  for (let i = 0; i < arr55.length; i+=2) {
+    result.push(arr55[i]);}
+  return result;
+}
+
+console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
+
+//kitas pav.
+function removeEveryOther(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    arr.splice(i, 1);
+  }
+  return arr;
+}
+console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
