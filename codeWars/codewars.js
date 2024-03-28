@@ -1552,3 +1552,5 @@ function removeEveryOther(arr) {
   return arr;
 }
 console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
+
+console.log("labas");
