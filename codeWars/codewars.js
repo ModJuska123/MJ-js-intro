@@ -1620,3 +1620,39 @@ result111(15); // Change 20 to whatever number you want to test
 // ....new chalenge:
 
 
+//--Testavimas--
+// Function that calculates the sum of an array of numbers
+function sumArray(numbers) {
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum;
+}
+
+// Array of numbers
+const numbers = [1, 2, 3, 4, 5];
+
+const result123 = sumArray(numbers)
+
+console.log(result123)
+
+//Testavimas 2
+
+// Function to count the frequency of elements in an array using a Map
+function countElementFrequency(arr) {
+  const frequencyMap = new Map();
+  arr.forEach(element => {
+    frequencyMap.set(element, (frequencyMap.get(element) || 0) + 1);
+  });
+  return frequencyMap;
+}
+
+// Sample array with elements
+const vehicles = ['car', 'truck', 'car', 'bike', 'car', 'bike', 'truck'];
+
+// Call the function to count element frequency
+const elementFrequency = countElementFrequency(vehicles);
+elementFrequency.forEach((count, element) => {
+console.log(`${element}: ${count} time(s)`);
+});

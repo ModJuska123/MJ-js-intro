@@ -199,7 +199,7 @@ function createRandomString(stringlength){
     for(let i = 0; i < stringlength; i++) {
         randomString += characters.charAt(Math.floor(Math.random() * characters.length))
         }
-        console.log(randomString);
+        return console.log(randomString);
     }
 
-    console.log("Labas rytas");
+  console.log('labas');
