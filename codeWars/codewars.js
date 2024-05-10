@@ -1656,3 +1656,447 @@ const elementFrequency = countElementFrequency(vehicles);
 elementFrequency.forEach((count, element) => {
 console.log(`${element}: ${count} time(s)`);
 });
+// ----------------------------------------------
+//tasks from companies (C)
+
+
+// console.log("lets start")
+
+// function calculate(expression) {
+//   // Split the expression into operands and operator
+//   const [operator, operand1, operand2] = expression.split(' ');
+
+//   // Convert the operands to numbers
+//   const num1 = parseFloat(operand1);
+//   const num2 = parseFloat(operand2);
+
+//   // Perform the calculation based on the operator
+//   let result1234;
+//   switch (operator) {
+//       case '+':
+//           result1234 = num1 + num2;
+//           break;
+//       case '-':
+//           result1234 = num1 - num2;
+//           break;
+//       case '*':
+//           result1234 = num1 * num2;
+//           break;
+//       case '/':
+//           result1234 = num1 / num2;
+//           break;
+//       default:
+//           return 'Invalid operator';
+//   }
+
+//   return result1234;
+// }
+
+// // Example usage
+// const expression = '-3* 4 5'; // Change the expression here
+// const result1234 = calculate(expression);
+// console.log(result1234); // Output the result
+
+// try2 333333333333333333333333333333333333
+
+// function calculate(expression) {
+//   // Remove whitespaces from the expression
+//   expression = expression.replace(/\s/g, '');
+
+//   // Check if the expression contains nested parentheses
+//   while (expression.includes('(')) {
+//       // Find the innermost pair of parentheses
+//       const startIndex = expression.lastIndexOf('(');
+//       const endIndex = expression.indexOf(')', startIndex);
+
+//       // Extract the substring inside the parentheses
+//       const subExpression = expression.substring(startIndex + 1, endIndex);
+
+//       // Calculate the value of the sub-expression
+//       const subResult = calculate(subExpression);
+
+//       // Replace the sub-expression with its value
+//       expression = expression.substring(0, startIndex) + subResult + expression.substring(endIndex + 1);
+//   }
+
+//   // Split the expression into tokens
+//   const tokens = expression.match(/[+\-*/()]|\d+/g);
+
+//   // Extract the operator and operands
+//   const operator = tokens.shift();
+//   const nums = tokens.map(token => parseFloat(token));
+
+//   // Perform the calculation based on the operator
+//   let result;
+//   switch (operator) {
+//       case '+':
+//           result = nums.reduce((acc, curr) => acc + curr, 0);
+//           break;
+//       case '-':
+//           result = nums.reduce((acc, curr) => acc - curr);
+//           break;
+//       case '*':
+//           result = nums.reduce((acc, curr) => acc * curr, 1);
+//           break;
+//       case '/':
+//           result = nums.reduce((acc, curr) => acc / curr);
+//           break;
+//       default:
+//           return 'Invalid operator';
+//   }
+
+//   return result;
+// }
+
+// // Example usage
+// console.log(calculate('+3 4'));       // Output: 7
+// console.log(calculate('-3 * 4 5'));   // Output: -17
+// console.log(calculate('*+ 3 4 5'));   // Output: 35
+// console.log(calculate('/- 3 4 + 5 2'));// Output: -1
+
+
+// .......................
+
+function calculate(expression) {
+  // Remove whitespaces from the expression
+  expression = expression.replace(/\s/g, '');
+
+  // Check if the expression contains nested parentheses
+  while (expression.includes('(')) {
+      // Find the innermost pair of parentheses
+      const startIndex = expression.lastIndexOf('(');
+      const endIndex = expression.indexOf(')', startIndex);
+
+      // Extract the substring inside the parentheses
+      const subExpression = expression.substring(startIndex + 1, endIndex);
+
+      // Calculate the value of the sub-expression
+      const subResult = calculate(subExpression);
+
+      // Replace the sub-expression with its value
+      expression = expression.substring(0, startIndex) + subResult + expression.substring(endIndex + 1);
+  }
+
+  // Split the expression into operands and operator
+  const tokens = expression.match(/[+\-*/()]|\d+/g);
+
+  // Extract the operator and operands
+  const operator = tokens.shift();
+  const nums = tokens.map(token => parseFloat(token));
+
+  // Perform the calculation based on the operator
+  let result222;
+  switch (operator) {
+      case '+':
+          result222 = nums.reduce((acc, curr) => acc + curr, 0);
+          break;
+      case '-':
+          result222 = nums.reduce((acc, curr) => acc - curr);
+          break;
+      case '*':
+          result222 = nums.reduce((acc, curr) => acc * curr, 1);
+          break;
+      case '/':
+          result222 = nums.reduce((acc, curr) => acc / curr);
+          break;
+      default:
+          return 'Invalid operator';
+  }
+
+  return result222;
+}
+
+// Example usage
+console.log(calculate('-3 *4'));       // Output: -12
+console.log(calculate('* + 3 4 5'));   // Output: 35
+console.log(calculate('/ - 3 4 + 5 2'));// Output: -1
+
+//......................................
+
+function calculate(expression) {
+  // Remove whitespaces from the expression
+  expression = expression.replace(/\s/g, '');
+
+  // Check if the expression contains nested parentheses
+  while (expression.includes('(')) {
+      // Find the innermost pair of parentheses
+      const startIndex = expression.lastIndexOf('(');
+      const endIndex = expression.indexOf(')', startIndex);
+
+      // Extract the substring inside the parentheses
+      const subExpression = expression.substring(startIndex + 1, endIndex);
+
+      // Calculate the value of the sub-expression
+      const subResult = calculate(subExpression);
+
+      // Replace the sub-expression with its value
+      expression = expression.substring(0, startIndex) + subResult + expression.substring(endIndex + 1);
+  }
+
+  // Split the expression into tokens
+  const tokens = expression.match(/[+\-*/()]|\d+/g);
+
+  // Extract the operator and operands
+  const operator = tokens.shift();
+  const nums = tokens.map(token => parseFloat(token));
+
+  // Perform the calculation based on the operator
+  let result333;
+  switch (operator) {
+      case '+':
+          result333 = nums.reduce((acc, curr) => acc + curr, 0);
+          break;
+      case '-':
+          result333 = nums.reduce((acc, curr) => acc - curr);
+          break;
+      case '*':
+          result333 = nums.reduce((acc, curr) => acc * curr, 1);
+          break;
+      case '/':
+          result333 = nums.reduce((acc, curr) => acc / curr);
+          break;
+      default:
+          return 'Invalid operator';
+  }
+
+  return result333;
+}
+
+// Example usage and output
+console.log(calculate('-3*4'));       // Output: -12
+console.log(calculate('*+3 4 5'));    // Output: 35
+console.log(calculate('/-3 4+5 2'));  // Output: -1
+
+
+//..............................
+
+function infixToPostfix(expression) {
+  // Function to determine precedence of operators
+  const precedence = (operator) => {
+      switch (operator) {
+          case '+':
+          case '-':
+              return 1;
+          case '*':
+          case '/':
+              return 2;
+          default:
+              return 0;
+      }
+  };
+
+  // Convert infix expression to postfix using the Shunting Yard algorithm
+  const outputQueue = [];
+  const operatorStack = [];
+
+  const tokens = expression.split(/\s+/);
+
+  tokens.forEach(token => {
+      if (!isNaN(token)) {
+          outputQueue.push(parseFloat(token));
+      } else if (token === '(') {
+          operatorStack.push(token);
+      } else if (token === ')') {
+          while (operatorStack.length && operatorStack[operatorStack.length - 1] !== '(') {
+              outputQueue.push(operatorStack.pop());
+          }
+          operatorStack.pop(); // Discard '('
+      } else {
+          while (operatorStack.length && precedence(operatorStack[operatorStack.length - 1]) >= precedence(token)) {
+              outputQueue.push(operatorStack.pop());
+          }
+          operatorStack.push(token);
+      }
+  });
+
+  while (operatorStack.length) {
+      outputQueue.push(operatorStack.pop());
+  }
+
+  // Evaluate postfix expression
+  const evaluateStack = [];
+  outputQueue.forEach(token => {
+      if (!isNaN(token)) {
+          evaluateStack.push(token);
+      } else {
+          const operand2 = evaluateStack.pop();
+          const operand1 = evaluateStack.pop();
+          switch (token) {
+              case '+':
+                  evaluateStack.push(operand1 + operand2);
+                  break;
+              case '-':
+                  evaluateStack.push(operand1 - operand2);
+                  break;
+              case '*':
+                  evaluateStack.push(operand1 * operand2);
+                  break;
+              case '/':
+                  evaluateStack.push(operand1 / operand2);
+                  break;
+          }
+      }
+  });
+
+  return evaluateStack.pop();
+}
+
+// Example usage and output
+console.log(infixToPostfix('3 + 4'));              // Output: 7
+console.log(infixToPostfix('3 - (4 * 5)'));       // Output: -17
+console.log(infixToPostfix('(3 + 4) * 5'));       // Output: 35
+console.log(infixToPostfix('(3 - 4) / (5 + 2)')); // Output: -1
+
+
+// ..................................
+
+function infixToPostfix(expression) {
+  // Function to determine precedence of operators
+  const precedence = (operator) => {
+      switch (operator) {
+          case '+':
+          case '-':
+              return 1;
+          case '*':
+          case '/':
+              return 2;
+          default:
+              return 0;
+      }
+  };
+
+  // Convert infix expression to postfix using the Shunting Yard algorithm
+  const outputQueue = [];
+  const operatorStack = [];
+
+  const tokens = expression.match(/[+\-*/()]|\d+/g);
+
+  tokens.forEach(token => {
+      if (!isNaN(token)) {
+          outputQueue.push(parseFloat(token));
+      } else if (token === '(') {
+          operatorStack.push(token);
+      } else if (token === ')') {
+          while (operatorStack.length && operatorStack[operatorStack.length - 1] !== '(') {
+              outputQueue.push(operatorStack.pop());
+          }
+          operatorStack.pop(); // Discard '('
+      } else {
+          while (operatorStack.length && precedence(operatorStack[operatorStack.length - 1]) >= precedence(token)) {
+              outputQueue.push(operatorStack.pop());
+          }
+          operatorStack.push(token);
+      }
+  });
+
+  while (operatorStack.length) {
+      outputQueue.push(operatorStack.pop());
+  }
+
+  // Evaluate postfix expression
+  const evaluateStack = [];
+  outputQueue.forEach(token => {
+      if (!isNaN(token)) {
+          evaluateStack.push(token);
+      } else {
+          const operand2 = evaluateStack.pop();
+          const operand1 = evaluateStack.pop();
+          switch (token) {
+              case '+':
+                  evaluateStack.push(operand1 + operand2);
+                  break;
+              case '-':
+                  evaluateStack.push(operand1 - operand2);
+                  break;
+              case '*':
+                  evaluateStack.push(operand1 * operand2);
+                  break;
+              case '/':
+                  evaluateStack.push(operand1 / operand2);
+                  break;
+          }
+      }
+  });
+
+  return evaluateStack.pop();
+}
+
+// Example usage and output
+console.log(infixToPostfix('3 + 4'));              // Output: 7
+console.log(infixToPostfix('3 - (4 * 5)'));       // Output: -17
+console.log(infixToPostfix('(3 + 4) * 5'));       // Output: 35
+console.log(infixToPostfix('(3 - 4) / (5 + 2)')); // Output: -/
+
+
+///..................................
+
+exports.calculate = function(expression) {
+  // Function to determine precedence of operators
+  const precedence = (operator) => {
+      switch (operator) {
+          case '+':
+          case '-':
+              return 1;
+          case '*':
+          case '/':
+              return 2;
+          default:
+              return 0;
+      }
+  };
+
+  // Convert infix expression to postfix using the Shunting Yard algorithm
+  const outputQueue = [];
+  const operatorStack = [];
+
+  const tokens = expression.match(/[+\-*/()]|\d+/g);
+
+  tokens.forEach(token => {
+      if (!isNaN(token)) {
+          outputQueue.push(parseFloat(token));
+      } else if (token === '(') {
+          operatorStack.push(token);
+      } else if (token === ')') {
+          while (operatorStack.length && operatorStack[operatorStack.length - 1] !== '(') {
+              outputQueue.push(operatorStack.pop());
+          }
+          operatorStack.pop(); // Discard '('
+      } else {
+          while (operatorStack.length && precedence(operatorStack[operatorStack.length - 1]) >= precedence(token)) {
+              outputQueue.push(operatorStack.pop());
+          }
+          operatorStack.push(token);
+      }
+  });
+
+  while (operatorStack.length) {
+      outputQueue.push(operatorStack.pop());
+  }
+
+  // Evaluate postfix expression
+  const evaluateStack = [];
+  outputQueue.forEach(token => {
+      if (!isNaN(token)) {
+          evaluateStack.push(token);
+      } else {
+          const operand2 = evaluateStack.pop();
+          const operand1 = evaluateStack.pop();
+          switch (token) {
+              case '+':
+                  evaluateStack.push(operand1 + operand2);
+                  break;
+              case '-':
+                  evaluateStack.push(operand1 - operand2);
+                  break;
+              case '*':
+                  evaluateStack.push(operand1 * operand2);
+                  break;
+              case '/':
+                  evaluateStack.push(operand1 / operand2);
+                  break;
+          }
+      }
+  });
+
+  return evaluateStack.pop();
+};
