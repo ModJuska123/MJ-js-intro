@@ -1,0 +1,57 @@
+<!-- 
+This an example of try...catch use with JASON file; 
+If json is malformed, JSON.parse generates an error, so the script “dies”.
+Rethrow of second error;
+-->
+
+<!DOCTYPE html>
+
+<script>
+
+"use strict"; 
+   
+    // let json = '{"name":"John", "age":46}';
+    // let json = '{"Bad John"}';
+    let json = '{"age":30}'; //incomplete data;
+    
+    
+    try {        
+        
+        let user = JSON.parse(json);
+        // user = {/* ... */};
+
+
+        if (!user.name) {
+            throw new SyntaxError("Incomplete data: no name!!!"); //created new syntax error object.
+        }
+
+            blablabla();
+
+            alert(user.name);
+            // alert(user.age);
+            // alert('success');
+   
+    } catch (err) {
+        // alert("JSON Error: " + err.message); //showed syntax error object message;
+        // alert('Our apologies data has errors!!! ' + err);
+        
+        // if (err instanceof ReferenceError) {
+        //     alert('ReferenceError');
+        // }
+        
+        if (err instanceof SyntaxError) {
+            alert('JSON Error: ' + err.message);
+
+        } else {
+            throw err;
+        }
+        // alert(err);
+        // alert(err.name);
+        // alert(err.message);
+        // alert(err.stack);
+
+
+
+    }   
+
+</script>

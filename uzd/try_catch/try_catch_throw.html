@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<script>
+  "struct use";
+
+  function useOfTryCatch() {
+    let json = '{"age" : 30}';
+
+    try {
+      blablabla();
+    } catch (err) {
+      if (!(err instanceof SyntaxError)) {
+        throw err;
+      }
+    }
+  }
+
+  try {
+    useOfTryCatch();
+  } catch (err) {
+    alert("External catch worked: " + err);
+  }
+</script>

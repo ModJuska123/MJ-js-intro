@@ -1,0 +1,26 @@
+<!-- 
+"try....catch" rules: 
+doesn't work with timeout;
+works with run time err, but not syntax; 
+Err object is created passed as an argument;
+Err props are: err.name, err.message, err.stack;
+-->
+
+
+<!DOCTYPE html>
+<script>
+    "use strict";
+
+    try {
+        alert('Start of tries');
+blabla;
+        alert('End of try runs, NO errors');
+
+    } catch(err) {
+        alert ('Catch is activated because error found');
+        alert (err.name);
+        alert (err.message);
+        alert (err.stack);
+        alert (err);
+    }
+</script>

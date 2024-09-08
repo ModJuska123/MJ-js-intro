@@ -2100,3 +2100,119 @@ exports.calculate = function(expression) {
 
   return evaluateStack.pop();
 };
+
+// uzduotys 2024-09-04
+
+function sumOfNumbersInString(input) {
+  let sum = 0;
+  let currentNumber = '';
+
+  for (let i = 0; i < input.length; i++) {
+      const char = input[i];
+
+      // Check if the current character is a digit
+      if (char >= '0' && char <= '9') {
+          currentNumber += char; // Build the current number
+      } else {
+          // If the current number is not empty, add it to the sum
+          if (currentNumber) {
+              sum += parseInt(currentNumber, 10);
+              currentNumber = ''; // Reset the current number
+          }
+      }
+  }
+
+  // Add the last number found, if any
+  if (currentNumber) {
+      sum += parseInt(currentNumber, 10);
+  }
+
+  return sum;
+}
+
+// Example usage:
+console.log("--------------------2024-09-04-------------------------");
+
+function sumOfDigitsInString(input) {
+  // 1. Initialize the sum to 0.
+  let sum = 0;
+
+  // 2. Loop through each character in the input string.
+  for (let i = 0; i < input.length; i++) {
+    const char = input[i];
+
+    // 3. Check if the character is a digit.
+    if (char >= '0' && char <= '9') {
+      // 4. Convert the character to a number and add it to the sum.
+      sum += parseInt(char, 10);
+    }
+  }
+
+  // 5. Return the total sum.
+  return sum;
+}
+
+// Example usage:
+const inputString1 = "abc123xyz45def67678";
+const result1 = sumOfDigitsInString(inputString1);
+console.log(`Sum of all digits in the string: ${result1}`);
+
+console.clear
+
+console.log('-------------------------');
+
+function sumOfDigitsInString2 (string) {
+
+  let sumOfDigits = 0;
+
+  for (i = 0; i < string.length; i++) {
+    const temp = string[i];
+    if (temp >= '0' && temp <= '9') {
+      sumOfDigits += parseInt(temp, 10);
+    } 
+  }
+  return sumOfDigits;
+}
+
+const inputString12 = 'hew321chw12';
+console.log(sumOfDigitsInString2(inputString12));
+
+
+
+console.clear;
+console.log('-----------------');
+
+function getSumOfNumFromString(input) {
+
+  let sumOfNumbers = 0;
+
+  for (i = 0; i < input.length; i++) {
+
+    const tempHolder = input[i];
+
+    if (tempHolder >= 0 && tempHolder <= 9) {
+
+      sumOfNumbers += parseInt(tempHolder, 10);
+    }
+
+  }
+
+  return sumOfNumbers;
+}
+
+const finalresults = "ajhfghf123";
+console.log(getSumOfNumFromString(finalresults));
+
+console.log("-------------------------");
+
+function sum(x,y) {
+  console.log(x+'+'+y+'='+(x+y));
+  return x+y
+}
+console.log(sum(sum(1,4), sum(3, sum(4,5))));
+
+const y = 1; const x1 = 2;
+console.log(x1 + '+' + y + '=' + (x1 + y));
+
+// --------------------------------------------
+console.log('--------------------------------')
