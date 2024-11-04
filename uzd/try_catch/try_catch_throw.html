@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-
+<!-- 
+Rules:
+- this is example of inner and outer try...catch construct
+- inner catch block deals with err it knows and handles other to outer block
+- structure: 
+        function () { try { //script + BUG } catch ( err ) { // if (! (...SyntaxError) ) { throw err}  } }
+        try { function () } catch ( err ) { alert ('Err message' + err) }
+- 
+-->
 <script>
   "struct use";
 
@@ -8,7 +16,9 @@
     let json = '{"age" : 30}';
 
     try {
-      blablabla();
+
+      blabla;
+
     } catch (err) {
       if (!(err instanceof SyntaxError)) {
         throw err;
@@ -17,7 +27,7 @@
   }
 
   try {
-    useOfTryCatch();
+    readData();
   } catch (err) {
     alert("External catch worked well: " + err);
   }

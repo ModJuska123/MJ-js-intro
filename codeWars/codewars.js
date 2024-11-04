@@ -2216,3 +2216,44 @@ console.log(x1 + '+' + y + '=' + (x1 + y));
 
 // --------------------------------------------
 console.log('--------------------------------')
+
+
+function maximumOddTwoDigitNumber(S) {
+  const oddDigitsArray = [];
+  const evenDigitsArray = [];
+
+  for (let char of S) {
+    const digit = parseInt(char, 10);
+    if(digit % 2 !== 0) {
+      oddDigitsArray.push(digit);
+    } else {
+      evenDigitsArray.push(digit);
+    }
+  }
+const oddCount = oddDigitsArray.length;
+const evenCount = evenDigitsArray.length;
+
+let count = 0;
+
+count += Math.min(oddCount, evenCount);
+return `V1 Maksimalus skaičių kiekis yra: ${count}`;
+}
+console.log(maximumOddTwoDigitNumber("12346"));
+console.log(maximumOddTwoDigitNumber("234444457899999"));
+console.log(maximumOddTwoDigitNumber("123456"));
+console.log(maximumOddTwoDigitNumber("123456"));
+
+function maximumOddTwoDigitNumber2(S) {
+  let oddCount = 0;
+  let evenCount = 0;
+
+  for(let char of S) {
+    const digit = parseInt(char, 10);
+    if (digit % 2 !==0) {
+      oddCount++;} else {
+        evenCount++
+      }
+    }
+    return `V2 Maksimalus skaičių kiekis yra: ${Math.min(oddCount, evenCount)}`;
+  }
+  console.log(maximumOddTwoDigitNumber2("12"));
